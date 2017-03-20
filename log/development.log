@@ -1,0 +1,11 @@
+source=rack-timeout id=970f2171bd0b5d6d1e0ec660a66cb57e timeout=15000ms state=ready
+Started GET "/" for 127.0.0.1 at 2017-03-20 18:45:14 +0200
+source=rack-timeout id=970f2171bd0b5d6d1e0ec660a66cb57e timeout=15000ms service=1ms state=active
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/kapranov/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/kapranov/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (5.5ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+source=rack-timeout id=970f2171bd0b5d6d1e0ec660a66cb57e timeout=15000ms service=175ms state=completed
