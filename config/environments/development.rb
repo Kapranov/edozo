@@ -7,4 +7,6 @@ Rails.application.configure do
   config.assets.debug = true
   config.assets.quiet = true
   config.log_level = :info
+  config.action_controller.perform_caching = true
+  config.cache_store = :redis_store, Rails.application.secrets.redis_cache, { expires_in: 90.minutes }
 end
