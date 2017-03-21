@@ -12,5 +12,4 @@ Rails.application.configure do
   config.web_console.automount = true
   config.web_console.whiny_requests = false
   config.web_console.whitelisted_ips = Rails.application.secrets.web_console_ips.to_s
-  #config.web_console.whitelisted_ips = %w(127.0.0.1 192.168.2.102 159.224.174.183)
 end
