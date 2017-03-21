@@ -1,7 +1,10 @@
-Started GET "/" for 127.0.0.1 at 2017-03-21 10:45:56 +0200
+Started GET "/" for 127.0.0.1 at 2017-03-21 11:54:22 +0200
 Processing by HomeController#index as HTML
   Rendering home/index.html.slim within layouts/application
-  Rendered home/index.html.slim within layouts/application (14.0ms)
-Completed 200 OK in 35949ms (Views: 35948.0ms | ActiveRecord: 0.0ms)
+  Rendered home/index.html.slim within layouts/application (10.7ms)
+Completed 200 OK in 34763ms (Views: 34761.9ms | ActiveRecord: 0.0ms)
 
 
+Started PUT "/__web_console/repl_sessions/51abedd558804871cf68d70b40d025d3" for 127.0.0.1 at 2017-03-21 11:55:04 +0200
+Started PUT "/__web_console/repl_sessions/51abedd558804871cf68d70b40d025d3" for 127.0.0.1 at 2017-03-21 11:55:05 +0200
+Started PUT "/__web_console/repl_sessions/51abedd558804871cf68d70b40d025d3" for 127.0.0.1 at 2017-03-21 11:55:06 +0200

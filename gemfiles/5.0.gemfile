@@ -30,6 +30,7 @@ gem 'foundation-rails'
 
 group :development do
   gem 'brakeman',     require: false
+  gem 'web-console'
 end
 
 group :test do
