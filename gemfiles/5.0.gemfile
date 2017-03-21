@@ -27,6 +27,11 @@ gem 'em-synchrony'
 gem 'foreman'
 gem 'slim-rails'
 gem 'foundation-rails'
+gem 'devise'
+gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-linkedin-oauth2'
+gem 'omniauth-twitter'
 
 group :development do
   gem 'brakeman',     require: false
