@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-
+  get 'home/index'
   get 'dashboard/index'
+
+  resources :locations, except: [:update, :edit, :destroy]
 
   devise_for :users, :controllers => {
     :omniauth_callbacks => "users/omniauth_callbacks"
@@ -10,8 +12,6 @@ Rails.application.routes.draw do
     get 'sign_in', :to => 'devise/sessions#new', :as => :new_user_session
     delete 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
   end
-
-  get 'home/index'
 
   %w( 404 422 500 ).each do |code|
     get code, to: "errors#show", :code => code

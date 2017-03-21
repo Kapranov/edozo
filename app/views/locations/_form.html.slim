@@ -1,0 +1,10 @@
+= form_for @location do |f|
+  .form-group
+    = f.label :title
+    = f.text_field :title, class: "form-control"
+  .form-group
+    = f.label :user_id
+    = f.text_field :user_id
+
+  h4 Enter either address
+

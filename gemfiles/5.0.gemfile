@@ -34,11 +34,12 @@ gem 'omniauth-linkedin-oauth2'
 gem 'omniauth-twitter'
 gem 'omniauth-github'
 gem 'simple_form'
+gem 'geocoder'
 
 group :development do
   gem 'brakeman',     require: false
   gem 'better_errors'
-  gem 'rails_layout'
+  gem 'binding_of_caller'
   gem 'web-console'
 end
 
