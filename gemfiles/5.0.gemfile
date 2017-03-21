@@ -25,6 +25,7 @@ gem 'redis-namespace'
 gem 'hiredis'
 gem 'em-synchrony'
 gem 'foreman'
+gem 'slim-rails'
 gem 'foundation-rails'
 
 group :development do
