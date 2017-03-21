@@ -36,6 +36,8 @@ gem 'omniauth-github'
 
 group :development do
   gem 'brakeman',     require: false
+  gem 'better_errors'
+  gem 'rails_layout'
   gem 'web-console'
 end
 
