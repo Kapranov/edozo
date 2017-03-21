@@ -1,28 +1,49 @@
 general: &general
-  CORS:             '127.0.0.1:3000'
-  PORT:             '3000'
-  LOCALHOST:        '127.0.0.1'
-  DOMAIN_NAME:      'localhost'
+  CORS:                       '127.0.0.1:3000'
+  PORT:                       '3000'
+  LOCALHOST:                  '127.0.0.1'
+  DOMAIN_NAME:                'localhost'
 
 redis: &redis
-  REDIS_URL:        'redis://localhost:6379/0'
-  REDIS_DATA:       'redis://localhost:6379/0/edozo_data'
-  REDIS_CACHE:      'redis://localhost:6379/0/edozo_cache'
-  REDIS_NAMESPACE:  'edozo'
+  REDIS_URL:                  'redis://localhost:6379/0'
+  REDIS_DATA:                 'redis://localhost:6379/0/edozo_data'
+  REDIS_CACHE:                'redis://localhost:6379/0/edozo_cache'
+  REDIS_NAMESPACE:            'edozo'
+
+facebook: &facebook
+  FACEBOOK_API_KEY:           '388587468189084'
+  FACEBOOK_API_SECRET:        'a4027ac214ec0d5a4ad96633dc253750'
+
+linkedin: &linkedin
+  LINKEDIN_API_KEY:           '86swb8vsv8kktm'
+  LINKEDIN_API_SECRET:        'RQkCoQqW4Ue61dNt'
+
+twitter: &twitter
+  TWITTER_API_KEY:            'QGIQZ1aP0q2Nda501gzfcyHKt'
+  TWITTER_API_SECRET:         'db3xvJ9nIKqxo5L74wrazSuy1w7bw9MaVvHkm4g8z2pBYFEqZY'
+
+google: &google
+  GOOGLE_OAUTH2_API_KEY:      '132601573714-3sv4t74b6lbui4c7v9do30uo177o3r4r.apps.googleusercontent.com'
+  GOOGLE_OAUTH2_API_SECRET:   '1WsXW-FzIN5NiXHRCg0qF5a-'
 
 development:
   <<: *general
   <<: *redis
-  SECRET_KEY_BASE:  'b96602fcc70060c8d429fb5b35371adaa5ad3eeddd4d4def3ed9600686425b5b65c4de282e4ae7ff8979afe1afb722d071751f6651e416fe2fbd7f7675b673e9'
-  WEB_CONSOLE_IPS:  '127.0.0.1'
-  MAILER_DEFAULT:   'kapranov.lugatex@gmail.com'
+  <<: *facebook
+  <<: *linkedin
+  <<: *twitter
+  <<: *google
+  SECRET_KEY_BASE:            'b96602fcc70060c8d429fb5b35371adaa5ad3eeddd4d4def3ed9600686425b5b65c4de282e4ae7ff8979afe1afb722d071751f6651e416fe2fbd7f7675b673e9'
+  WEB_CONSOLE_IPS:            '127.0.0.1'
+  MAILER_DEFAULT:             'kapranov.lugatex@gmail.com'
+
 
 test:
   <<: *general
   <<: *redis
-  SECRET_KEY_BASE:  '61afed0ceee7fca315b50b27c05908176ab27e4dc9bc48c3ed6c782c6ca6cd53484b85c2b2a2be327a4fe9dba42ee748cce057f02d1883d755ffe4aa257487e5'
+  SECRET_KEY_BASE:            '61afed0ceee7fca315b50b27c05908176ab27e4dc9bc48c3ed6c782c6ca6cd53484b85c2b2a2be327a4fe9dba42ee748cce057f02d1883d755ffe4aa257487e5'
 
 production:
   <<: *general
   <<: *redis
-  SECRET_KEY_BASE:  '054cc01e72fc84352e4cc0ca21c9ba8b2a37958aa2c1259a86a7dd536f1ff0fdf4e689dbb4704548c9b501f91aaa0988a0abc9d729b4110733939762676b9dcb'
+  SECRET_KEY_BASE:            '054cc01e72fc84352e4cc0ca21c9ba8b2a37958aa2c1259a86a7dd536f1ff0fdf4e689dbb4704548c9b501f91aaa0988a0abc9d729b4110733939762676b9dcb'
