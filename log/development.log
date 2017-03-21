@@ -497,3 +497,963 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 85ms (Views: 84.0ms | ActiveRecord: 0.0ms)
 
 
+Started PUT "/__web_console/repl_sessions/42a32039b710cb1575b77648fd95fd8d" for ::1 at 2017-03-21 18:39:41 +0200
+Started GET "/" for ::1 at 2017-03-21 18:39:43 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (3.7ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.9ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 105ms (Views: 104.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-21 18:44:15 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.slim (15.4ms)
+Completed 500 Internal Server Error in 314ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `dashboard_path' for #<#<Class:0x007f922c2bdcc8>:0x007f922c2bcad0>):
+    1: .top-bar#example-menu
+    2:   .top-bar-left
+    3:     ul.dropdown.menu[data-dropdown-menu]
+    4:       li.menu-text = link_to 'rightmove', dashboard_path
+    5:       = render 'layouts/navigation_links'
+  
+app/views/layouts/_navigation.html.slim:4:in `_app_views_layouts__navigation_html_slim___1702478159401038133_70132824121980'
+app/views/layouts/application.html.slim:13:in `_app_views_layouts_application_html_slim__471902944439526742_70132758353860'
+Processing by ErrorsController#show as HTML
+  Parameters: {"code"=>"500"}
+  Rendering errors/500.html.slim within layouts/application
+  Rendered errors/500.html.slim within layouts/application (2.3ms)
+  Rendered layouts/_navigation.html.slim (14.0ms)
+Completed 500 Internal Server Error in 141ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-21 18:44:41 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.slim (0.3ms)
+  Rendered layouts/_navigation.html.slim (5.2ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.4ms)
+Completed 200 OK in 111ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 18:44:44 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.slim within layouts/application
+  Rendered dashboard/index.html.slim within layouts/application (3.2ms)
+  Rendered layouts/_navigation_links.html.slim (0.3ms)
+  Rendered layouts/_navigation.html.slim (1.0ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.5ms)
+Completed 200 OK in 109ms (Views: 108.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-21 18:46:27 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.slim (0.3ms)
+  Rendered layouts/_navigation.html.slim (5.7ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 98ms (Views: 97.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 18:46:32 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 18:46:32 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (5.8ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.9ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.4ms)
+Completed 200 OK in 96ms (Views: 85.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 18:47:23 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 18:47:23 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (6.3ms)
+  Rendered layouts/_navigation_links.html.slim (0.1ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 104ms (Views: 102.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-21 18:49:12 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.slim (0.4ms)
+  Rendered layouts/_navigation.html.slim (1.3ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 99ms (Views: 97.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/__web_console/repl_sessions/4fcabbc617f9ca348a1d0e17312eae61" for ::1 at 2017-03-21 18:49:22 +0200
+Started PUT "/__web_console/repl_sessions/4fcabbc617f9ca348a1d0e17312eae61" for ::1 at 2017-03-21 18:49:23 +0200
+Started PUT "/__web_console/repl_sessions/4fcabbc617f9ca348a1d0e17312eae61" for ::1 at 2017-03-21 18:49:23 +0200
+Started PUT "/__web_console/repl_sessions/4fcabbc617f9ca348a1d0e17312eae61" for ::1 at 2017-03-21 18:49:28 +0200
+Started PUT "/__web_console/repl_sessions/4fcabbc617f9ca348a1d0e17312eae61" for ::1 at 2017-03-21 18:49:41 +0200
+Started PUT "/__web_console/repl_sessions/4fcabbc617f9ca348a1d0e17312eae61" for ::1 at 2017-03-21 18:49:43 +0200
+Started PUT "/__web_console/repl_sessions/4fcabbc617f9ca348a1d0e17312eae61" for ::1 at 2017-03-21 18:49:43 +0200
+Started PUT "/__web_console/repl_sessions/4fcabbc617f9ca348a1d0e17312eae61" for ::1 at 2017-03-21 18:49:53 +0200
+Started GET "/dashboard/index" for ::1 at 2017-03-21 18:50:02 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 18:50:02 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (5.8ms)
+  Rendered layouts/_navigation_links.html.slim (0.1ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 91ms (Views: 90.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-21 18:52:01 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.slim (0.9ms)
+  Rendered layouts/_navigation.html.slim (2.4ms)
+  Rendered layouts/_messages.html.slim (6.1ms)
+  Rendered layouts/_console.html.slim (0.4ms)
+Completed 200 OK in 99ms (Views: 97.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 18:52:07 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 18:52:07 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (6.3ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 102ms (Views: 90.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-03-21 18:53:20 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (1.0ms)
+  Rendered layouts/_messages.html.slim (3.7ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 99ms (Views: 98.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-21 18:53:26 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.slim (0.3ms)
+  Rendered layouts/_navigation.html.slim (1.0ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.4ms)
+Completed 200 OK in 101ms (Views: 100.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 18:53:29 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 18:53:29 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (5.3ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (1.1ms)
+  Rendered layouts/_messages.html.slim (0.2ms)
+  Rendered layouts/_console.html.slim (0.4ms)
+Completed 200 OK in 90ms (Views: 88.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 18:54:02 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (7.1ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (3.4ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 133ms (Views: 132.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 18:54:05 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (8.3ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (1.2ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 98ms (Views: 97.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 18:54:08 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (5.0ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.4ms)
+Completed 200 OK in 120ms (Views: 118.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 18:54:11 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 18:54:11 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (6.0ms)
+  Rendered layouts/_navigation_links.html.slim (0.1ms)
+  Rendered layouts/_navigation.html.slim (0.7ms)
+  Rendered layouts/_messages.html.slim (0.2ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 85ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-21 18:54:16 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.slim (0.3ms)
+  Rendered layouts/_navigation.html.slim (1.3ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.4ms)
+Completed 200 OK in 139ms (Views: 138.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 18:54:18 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 18:54:18 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (7.8ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (1.1ms)
+  Rendered layouts/_messages.html.slim (0.2ms)
+  Rendered layouts/_console.html.slim (0.6ms)
+Completed 200 OK in 121ms (Views: 119.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-21 18:57:10 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (0.0ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (1.0ms)
+  Rendered layouts/_messages.html.slim (4.0ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 87ms (Views: 86.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 18:57:14 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 18:57:15 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (5.5ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (1.0ms)
+  Rendered layouts/_messages.html.slim (0.2ms)
+  Rendered layouts/_console.html.slim (0.4ms)
+Completed 200 OK in 90ms (Views: 88.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 18:57:30 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (6.4ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (1.1ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.4ms)
+Completed 200 OK in 100ms (Views: 98.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 18:57:32 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 18:57:32 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (5.5ms)
+  Rendered layouts/_navigation_links.html.slim (0.1ms)
+  Rendered layouts/_navigation.html.slim (0.7ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 87ms (Views: 86.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-21 19:00:32 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (11.4ms)
+  Rendered layouts/_navigation_links.html.slim (12.3ms)
+  Rendered layouts/_navigation.html.slim (19.4ms)
+  Rendered layouts/_messages.html.slim (6.6ms)
+  Rendered layouts/_console.html.slim (4.4ms)
+Completed 200 OK in 815ms (Views: 814.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 19:00:36 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:00:37 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (9.2ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 96ms (Views: 84.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-03-21 19:02:48 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (12.4ms)
+  Rendered layouts/_navigation_links.html.slim (11.2ms)
+  Rendered layouts/_navigation.html.slim (18.9ms)
+  Rendered layouts/_messages.html.slim (4.9ms)
+  Rendered layouts/_console.html.slim (3.4ms)
+Completed 200 OK in 3997ms (Views: 3995.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:02:55 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (32.5ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.3ms)
+  Rendered layouts/_console.html.slim (0.4ms)
+Completed 200 OK in 152ms (Views: 136.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 19:02:57 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:02:57 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (8.1ms)
+  Rendered layouts/_navigation_links.html.slim (0.1ms)
+  Rendered layouts/_navigation.html.slim (0.9ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.4ms)
+Completed 200 OK in 135ms (Views: 134.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:04:02 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (8.4ms)
+  Rendered layouts/_navigation_links.html.slim (0.3ms)
+  Rendered layouts/_navigation.html.slim (1.3ms)
+  Rendered layouts/_messages.html.slim (5.7ms)
+  Rendered layouts/_console.html.slim (0.5ms)
+Completed 200 OK in 144ms (Views: 142.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 19:04:05 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:04:05 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (7.6ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (1.0ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 113ms (Views: 111.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:04:23 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (5.8ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.9ms)
+  Rendered layouts/_messages.html.slim (3.5ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 92ms (Views: 91.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 19:04:25 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:04:25 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (6.3ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.9ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 85ms (Views: 84.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:04:31 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (6.1ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (1.3ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.5ms)
+Completed 200 OK in 98ms (Views: 97.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 19:04:33 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:04:33 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (5.3ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.9ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 77ms (Views: 76.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-21 19:06:36 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (10.7ms)
+  Rendered layouts/_navigation_links.html.slim (12.7ms)
+  Rendered layouts/_navigation.html.slim (17.0ms)
+  Rendered layouts/_messages.html.slim (15.4ms)
+Completed 500 Internal Server Error in 583ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Expected attribute
+  /home/kapranov/edozo/app/views/layouts/_messages.html.slim, Line 2, Column 20
+    .alert-box{class: foundation_flash_class(key)}(data-alert)
+                      ^
+):
+    1: - flash.each do |key, value|
+    2:   .alert-box{class: foundation_flash_class(key)}(data-alert)
+    3:     = value
+    4:     %a.close{href:"#"} &times;
+  
+app/views/layouts/_messages.html.slim:2
+app/views/layouts/application.html.slim:15:in `_app_views_layouts_application_html_slim___1733007348149356543_69986761533220'
+Processing by ErrorsController#show as HTML
+  Parameters: {"code"=>"500"}
+  Rendering errors/500.html.slim within layouts/application
+  Rendered errors/500.html.slim within layouts/application (4.3ms)
+  Rendered layouts/_navigation_links.html.slim (0.1ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (4.5ms)
+Completed 500 Internal Server Error in 158ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-21 19:08:09 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.slim (0.7ms)
+  Rendered layouts/_navigation.html.slim (1.5ms)
+  Rendered layouts/_messages.html.slim (7.3ms)
+  Rendered layouts/_console.html.slim (4.3ms)
+Completed 200 OK in 163ms (Views: 162.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 19:08:11 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:08:12 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (9.3ms)
+  Rendered layouts/_navigation_links.html.slim (0.1ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 126ms (Views: 95.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:09:42 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (9.3ms)
+  Rendered layouts/_navigation_links.html.slim (0.1ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (3.4ms)
+  Rendered layouts/_console.html.slim (0.4ms)
+Completed 200 OK in 102ms (Views: 101.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 19:09:45 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:09:45 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (9.3ms)
+  Rendered layouts/_navigation_links.html.slim (0.1ms)
+  Rendered layouts/_navigation.html.slim (0.9ms)
+  Rendered layouts/_messages.html.slim (21.7ms)
+Completed 500 Internal Server Error in 142ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `flash_class' for #<#<Class:0x007f4e1188c438>:0x007f4e1c230868>):
+    5:       a.close[href="#"]
+    6:         | x
+    7: - flash.each do |key, value|
+    8:   div[class="#{flash_class(key)}"]
+    9:     = value
+  
+app/views/layouts/_messages.html.slim:8:in `block in _app_views_layouts__messages_html_slim__2366999721360481698_69986785434840'
+app/views/layouts/_messages.html.slim:7:in `_app_views_layouts__messages_html_slim__2366999721360481698_69986785434840'
+app/views/layouts/application.html.slim:15:in `_app_views_layouts_application_html_slim___1733007348149356543_69986761533220'
+Processing by ErrorsController#show as HTML
+  Parameters: {"code"=>"500"}
+  Rendering errors/500.html.slim within layouts/application
+  Rendered errors/500.html.slim within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (1.0ms)
+  Rendered layouts/_messages.html.slim (13.3ms)
+Completed 500 Internal Server Error in 122ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:13:49 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (5.4ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.9ms)
+  Rendered layouts/_messages.html.slim (4.6ms)
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (Expected attribute
+  /home/kapranov/edozo/app/views/layouts/_messages.html.slim, Line 8, Column 20
+    .alert-box{class: flash_class(key)}(data-alert)
+                      ^
+):
+     5:       a.close[href="#"]
+     6:         | x
+     7: - flash.each do |key, value|
+     8:   .alert-box{class: flash_class(key)}(data-alert)
+     9:     = value
+    10:     %a.close{href:"#"} &times;
+  
+app/views/layouts/_messages.html.slim:8
+app/views/layouts/application.html.slim:15:in `_app_views_layouts_application_html_slim___1733007348149356543_69986761533220'
+Processing by ErrorsController#show as HTML
+  Parameters: {"code"=>"500"}
+  Rendering errors/500.html.slim within layouts/application
+  Rendered errors/500.html.slim within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (1.1ms)
+  Rendered layouts/_messages.html.slim (4.2ms)
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:15:04 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (6.0ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.9ms)
+  Rendered layouts/_messages.html.slim (2.6ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 97ms (Views: 96.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 19:15:07 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:15:07 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (6.0ms)
+  Rendered layouts/_navigation_links.html.slim (0.1ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 92ms (Views: 91.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:16:16 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (5.5ms)
+  Rendered layouts/_navigation_links.html.slim (0.1ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (3.3ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 115ms (Views: 114.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 19:16:19 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:16:19 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (5.1ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (1.3ms)
+  Rendered layouts/_messages.html.slim (0.4ms)
+  Rendered layouts/_console.html.slim (0.6ms)
+Completed 200 OK in 120ms (Views: 118.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:16:24 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (10.3ms)
+  Rendered layouts/_navigation_links.html.slim (0.3ms)
+  Rendered layouts/_navigation.html.slim (0.9ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.5ms)
+Completed 200 OK in 134ms (Views: 132.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 19:16:26 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:16:26 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (7.7ms)
+  Rendered layouts/_navigation_links.html.slim (0.1ms)
+  Rendered layouts/_navigation.html.slim (0.7ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.4ms)
+Completed 200 OK in 113ms (Views: 111.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-21 19:19:15 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (14.5ms)
+  Rendered layouts/_navigation_links.html.slim (12.6ms)
+  Rendered layouts/_navigation.html.slim (19.7ms)
+  Rendered layouts/_messages.html.slim (6.5ms)
+  Rendered layouts/_console.html.slim (4.5ms)
+Completed 200 OK in 920ms (Views: 918.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 19:19:19 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:19:20 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (10.0ms)
+  Rendered layouts/_navigation_links.html.slim (0.1ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 119ms (Views: 106.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:19:27 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (8.2ms)
+  Rendered layouts/_navigation_links.html.slim (0.1ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 119ms (Views: 118.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 19:19:29 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:19:29 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (6.0ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (1.0ms)
+  Rendered layouts/_messages.html.slim (0.2ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 111ms (Views: 110.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-21 19:22:53 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (18.1ms)
+  Rendered layouts/_navigation_links.html.slim (8.6ms)
+  Rendered layouts/_navigation.html.slim (12.5ms)
+  Rendered layouts/_messages.html.slim (3.1ms)
+  Rendered layouts/_console.html.slim (2.3ms)
+Completed 200 OK in 1029ms (Views: 1028.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 19:22:57 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:22:57 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (9.3ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.9ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 97ms (Views: 86.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/auth/github" for ::1 at 2017-03-21 19:23:02 +0200
+Started GET "/users/auth/github/callback?code=dac29fa262cb8613432f&state=0db95f04e94f1dbf610e5c2573f1f8d4d47a178fca267157" for ::1 at 2017-03-21 19:23:15 +0200
+Processing by Users::OmniauthCallbacksController#github as HTML
+  Parameters: {"code"=>"dac29fa262cb8613432f", "state"=>"0db95f04e94f1dbf610e5c2573f1f8d4d47a178fca267157"}
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 249ms (ActiveRecord: 238.4ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:23:16 +0200
+Processing by Devise::SessionsController#new as HTML
+Redirected to http://localhost:3000/dashboard/index
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 19:23:17 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.slim within layouts/application
+  Rendered dashboard/index.html.slim within layouts/application (2.6ms)
+  Rendered layouts/_navigation_links.html.slim (0.1ms)
+  Rendered layouts/_navigation.html.slim (0.7ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 80ms (Views: 78.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/sign_out" for ::1 at 2017-03-21 19:23:25 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yKkdStfS1PPZqcDXBty14PQLKrnirKhz6g320bEytE5yJZ0zhAbknoPQJuIJtV09cEkz0MeNkNElChbiOmWQOQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-03-21 19:23:25 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.9ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.2ms)
+Completed 200 OK in 74ms (Views: 73.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2017-03-21 19:23:56 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack (2.0.1) lib/rack/deflater.rb:35:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/kapranov/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/home/kapranov/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/home/kapranov/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Processing by ErrorsController#show as HTML
+  Parameters: {"code"=>"404"}
+  Rendering errors/404.html.slim within layouts/application
+  Rendered errors/404.html.slim within layouts/application (3.7ms)
+  Rendered layouts/_navigation_links.html.slim (0.3ms)
+  Rendered layouts/_navigation.html.slim (1.2ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 404 Not Found in 132ms (Views: 132.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for ::1 at 2017-03-21 19:24:06 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.slim (0.4ms)
+  Rendered layouts/_navigation.html.slim (1.7ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (1.3ms)
+Completed 200 OK in 113ms (Views: 112.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 19:24:19 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:24:19 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (7.4ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (1.0ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 111ms (Views: 98.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:25:34 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (5.5ms)
+  Rendered layouts/_navigation_links.html.slim (0.1ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (3.5ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 98ms (Views: 97.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:25:37 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (6.3ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.9ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 101ms (Views: 99.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 19:25:39 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:25:39 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (9.7ms)
+  Rendered layouts/_navigation_links.html.slim (0.1ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 115ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:25:43 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (7.4ms)
+  Rendered layouts/_navigation_links.html.slim (0.1ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 86ms (Views: 85.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/index" for ::1 at 2017-03-21 19:25:44 +0200
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 19:25:44 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (8.1ms)
+  Rendered layouts/_navigation_links.html.slim (0.3ms)
+  Rendered layouts/_navigation.html.slim (1.3ms)
+  Rendered layouts/_messages.html.slim (0.2ms)
+  Rendered layouts/_console.html.slim (0.5ms)
+Completed 200 OK in 106ms (Views: 104.5ms | ActiveRecord: 0.0ms)
+
+
