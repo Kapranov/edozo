@@ -3,9 +3,9 @@
 -----------------------------------------
 HomeControllerTest: test_should_get_index
 -----------------------------------------
-Started GET "/home/index" for 127.0.0.1 at 2017-03-21 16:19:29 +0200
+Started GET "/home/index" for 127.0.0.1 at 2017-03-21 17:17:24 +0200
 Processing by HomeController#index as HTML
   Rendering home/index.html.slim within layouts/application
-  Rendered home/index.html.slim within layouts/application (9.7ms)
-Completed 200 OK in 6046ms (Views: 6045.1ms | ActiveRecord: 0.0ms)
+  Rendered home/index.html.slim within layouts/application (16.1ms)
+Completed 200 OK in 6929ms (Views: 6928.4ms | ActiveRecord: 0.0ms)
   [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m

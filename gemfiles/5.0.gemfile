@@ -32,6 +32,7 @@ gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-linkedin-oauth2'
 gem 'omniauth-twitter'
+gem 'omniauth-github'
 
 group :development do
   gem 'brakeman',     require: false

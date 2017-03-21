@@ -23,6 +23,10 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     sign_in_with "Google"
   end
 
+  def github
+    sign_in_with "Github"
+  end
+
   def developer
     sign_in_with "Developer"
   end

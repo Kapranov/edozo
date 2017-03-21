@@ -1,46 +1,79 @@
-Started GET "/" for 127.0.0.1 at 2017-03-21 16:17:05 +0200
+Started GET "/" for 127.0.0.1 at 2017-03-21 17:15:30 +0200
 Processing by HomeController#index as HTML
   Rendering home/index.html.slim within layouts/application
-  Rendered home/index.html.slim within layouts/application (10.7ms)
-Completed 200 OK in 32680ms (Views: 32678.9ms | ActiveRecord: 0.0ms)
+  Rendered home/index.html.slim within layouts/application (11.0ms)
+Completed 200 OK in 35133ms (Views: 35132.2ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/sign_in" for 127.0.0.1 at 2017-03-21 16:17:47 +0200
+Started GET "/sign_in" for 127.0.0.1 at 2017-03-21 17:16:09 +0200
 Processing by Devise::SessionsController#new as HTML
   Rendering devise/sessions/new.html.slim within layouts/application
-  Rendered devise/sessions/new.html.slim within layouts/application (14.7ms)
-Completed 200 OK in 141ms (Views: 122.5ms | ActiveRecord: 1.2ms)
+  Rendered devise/sessions/new.html.slim within layouts/application (10.8ms)
+Completed 200 OK in 99ms (Views: 87.4ms | ActiveRecord: 0.7ms)
 
 
-Started GET "/users/auth/developer" for 127.0.0.1 at 2017-03-21 16:17:51 +0200
-Started POST "/users/auth/developer/callback" for 127.0.0.1 at 2017-03-21 16:18:05 +0200
+Started GET "/users/auth/developer" for 127.0.0.1 at 2017-03-21 17:16:12 +0200
+Started POST "/users/auth/developer/callback" for 127.0.0.1 at 2017-03-21 17:16:22 +0200
 Processing by Users::OmniauthCallbacksController#developer as HTML
   Parameters: {"name"=>"kapranov", "email"=>"lugatex@yahoo.com"}
 Redirected to http://api.dev.local:3000/
-Completed 302 Found in 829ms (ActiveRecord: 375.5ms)
+Completed 302 Found in 801ms (ActiveRecord: 362.2ms)
 
 
-Started GET "/" for 127.0.0.1 at 2017-03-21 16:18:06 +0200
+Started GET "/" for 127.0.0.1 at 2017-03-21 17:16:22 +0200
 Processing by HomeController#index as HTML
   Rendering home/index.html.slim within layouts/application
-  Rendered home/index.html.slim within layouts/application (0.0ms)
-Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.4ms)
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+Completed 200 OK in 71ms (Views: 69.8ms | ActiveRecord: 0.4ms)
 
 
-Started PUT "/__web_console/repl_sessions/e1a20a104c4232206e3a16c1647c5f45" for 127.0.0.1 at 2017-03-21 16:18:12 +0200
-Started PUT "/__web_console/repl_sessions/e1a20a104c4232206e3a16c1647c5f45" for 127.0.0.1 at 2017-03-21 16:18:13 +0200
-Started PUT "/__web_console/repl_sessions/e1a20a104c4232206e3a16c1647c5f45" for 127.0.0.1 at 2017-03-21 16:18:13 +0200
-Started DELETE "/sign_out" for 127.0.0.1 at 2017-03-21 16:18:19 +0200
+Started DELETE "/sign_out" for 127.0.0.1 at 2017-03-21 17:16:30 +0200
 Processing by Devise::SessionsController#destroy as HTML
-  Parameters: {"authenticity_token"=>"xQEPvpZaB3NvPdkGdZ//9SVjVfdtF5FajvpU7tQu6alPAYHdv3YPwFApZX7xhY+/8wRWY1zs2jBscyoeOAWlLg=="}
+  Parameters: {"authenticity_token"=>"ycEZq++ArVHZG4/IT8P2n7sPLZXlatQL5WsdfBANocL2IFwjVVUgh/LoGoHWwYNbqGpEChGWZDuR8hbe1ERVJg=="}
 Redirected to http://api.dev.local:3000/
-Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
 
 
-Started GET "/" for 127.0.0.1 at 2017-03-21 16:18:19 +0200
+Started GET "/" for 127.0.0.1 at 2017-03-21 17:16:31 +0200
 Processing by HomeController#index as HTML
   Rendering home/index.html.slim within layouts/application
   Rendered home/index.html.slim within layouts/application (0.0ms)
-Completed 200 OK in 71ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 66ms (Views: 65.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-21 17:16:54 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (6.1ms)
+Completed 200 OK in 114ms (Views: 113.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/github" for ::1 at 2017-03-21 17:16:58 +0200
+Started GET "/users/auth/github/callback?code=992f2d3c769acac0d71f&state=4c958aedb66e54d1ac1434937ede4c1bb88bc5acf39f1468" for ::1 at 2017-03-21 17:16:59 +0200
+Processing by Users::OmniauthCallbacksController#github as HTML
+  Parameters: {"code"=>"992f2d3c769acac0d71f", "state"=>"4c958aedb66e54d1ac1434937ede4c1bb88bc5acf39f1468"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 278ms (ActiveRecord: 272.1ms)
+
+
+Started GET "/" for ::1 at 2017-03-21 17:17:02 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+Completed 200 OK in 95ms (Views: 94.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/sign_out" for ::1 at 2017-03-21 17:17:06 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ht+YeieEWrGCVkEbYjvAgOP92MY41hoMKoj2qk9h+sqxTg1pEhvLzZNs4bT//qfgkMROfAEJP9emKm2im2HE6g=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-03-21 17:17:06 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (0.0ms)
+Completed 200 OK in 108ms (Views: 107.4ms | ActiveRecord: 0.0ms)
 
 
