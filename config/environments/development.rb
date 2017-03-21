@@ -12,4 +12,8 @@ Rails.application.configure do
   config.web_console.automount = true
   config.web_console.whiny_requests = false
   config.web_console.whitelisted_ips = Rails.application.secrets.web_console_ips.to_s
+  config.action_mailer.default_url_options = {
+    host: Rails.application.secrets.domain_name,
+    port: Rails.application.secrets.port
+  }
 end
