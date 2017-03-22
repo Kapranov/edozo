@@ -1,5 +1,13 @@
 header
-  h1 Location
+  h2 Location
+  |
+  '
+  for registered by
+  |
+  '
+  = current_user.provider
+  '
+  = current_user.email
 = link_to 'Add place', new_location_path
 div
   ul

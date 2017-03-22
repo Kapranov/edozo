@@ -2,7 +2,11 @@ class LocationsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @locations = Location.all
+    @locations = current_user.locations.all
+  end
+
+  def show
+    @location = Location.find(params[:id])
   end
 
   def new
@@ -10,10 +14,10 @@ class LocationsController < ApplicationController
   end
 
   def create
-    @location = Location.new(location_params)
+    @location = current_user.locations.new(location_params)
 
     if @location.save
-      redirect_to dashboard_index_path
+      redirect_to locations_path
     else
       render 'new'
     end
@@ -22,6 +26,6 @@ class LocationsController < ApplicationController
   private
 
   def location_params
-    params.require(:location).permit(:title, :address, :user_id)
+    params.require(:location).permit(:raw_address, :latitude, :longitude, :user_id)
   end
 end

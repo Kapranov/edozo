@@ -1,7 +1,7 @@
 class Location < ApplicationRecord
   attr_accessor :raw_address
 
-  belongs_to :user
+  belongs_to :user, foreign_key: 'user_id'
 
   geocoded_by :raw_address
   reverse_geocoded_by :latitude, :longitude
