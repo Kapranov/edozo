@@ -1,1 +1,17 @@
-h4 Properties sold nearby
+p
+  = location.address
+- if location.image_data?
+  = image_tag location.image_url(:thumb)
+  p
+    | Size
+    '
+    = location.image[:original].size
+    | bytes
+    '
+    | MIME type
+    '
+    = location.image[:original].mime_type
+    '
+    | Dimensions
+    '
+    = "#{location.image[:original].width}x#{location.image[:original].height}"

@@ -1,13 +1,26 @@
+h4 Enter either address
 = form_for @location do |f|
-  h4 Enter either address
-  fieldset.form-group
-    = f.label :raw_address, 'Address'
-    = f.text_field :raw_address, class: "form-control"
-    small.text-muted
-      | You can also enter IP. Your IP is
-      '
-      = request.ip
-    a[href="#" id="find-on-map"] Find on the map
+  = render "shared/errors", object: @location
+  = f.label :raw_address, 'Address'
+  = f.text_field :raw_address
+  small.text-muted
+  | You can also enter IP. Your IP is
+  '
+  = request.ip
+  = f.hidden_field :image, value: @location.cached_image_data
+  = f.label :image, 'please add image file'
+  = f.file_field :image
+
+  - if @location.image_data?
+    = image_tag @location.image_url(:thumb)
+    |
+    '
+    | Remove attachment:
+    '
+    = f.check_box :remove_image
+
+  a[href="#" id="find-on-map"] Find on the map
+  br
   = f.submit 'Add'
 
   div#map

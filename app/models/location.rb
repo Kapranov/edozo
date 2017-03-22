@@ -1,4 +1,6 @@
 class Location < ApplicationRecord
+  include ImageUploader[:image]
+
   attr_accessor :raw_address
 
   belongs_to :user, foreign_key: 'user_id'
