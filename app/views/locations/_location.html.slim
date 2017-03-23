@@ -1,3 +1,12 @@
+- if location.features.any?
+  h4
+    | Key Features
+  ul
+    - location.features.each do |feature|
+      li = feature.description
+
+br
+
 p
   = location.address
 - if location.image_data?

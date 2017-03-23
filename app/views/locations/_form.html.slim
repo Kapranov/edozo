@@ -9,9 +9,17 @@ h4 Enter either address
   = request.ip
   |
   '
+  h3 Features
+  #features
+    = f.fields_for :features do |feature|
+      = render 'feature_fields', f: feature
+    .links
+      = link_to_add_association 'add feature', f, :features
+  |
+  '
   = f.hidden_field :image, value: @location.cached_image_data
   = f.label :image, 'please add image file'
-  = f.file_field :image
+  = f.file_field :image, name: "location[image]"
 
   - if @location.image_data?
     = image_tag @location.image_url(:thumb)
@@ -24,7 +32,7 @@ h4 Enter either address
   '
   = f.hidden_field :floorplan, value: @location.cached_floorplan_data
   = f.label :floorplan, 'please add FloorPlan file'
-  = f.file_field :floorplan
+  = f.file_field :floorplan, name: "location[floorplan]"
 
   - if @location.floorplan_data?
     = image_tag @location.floorplan_url(:thumb)
