@@ -31,8 +31,12 @@ class LocationsController < ApplicationController
       :latitude,
       :longitude,
       :user_id,
+      :description,
+      :price_paid,
+      :floorplan,
       :image,
-      :remove_image
+      :remove_image,
+      features_attributes: [:id, :description, :_destroy]
     )
   end
 end

@@ -1,344 +1,470 @@
-Started GET "/" for ::1 at 2017-03-22 21:33:03 +0200
+Started GET "/" for ::1 at 2017-03-23 12:40:22 +0200
 Processing by HomeController#index as HTML
   Rendering home/index.html.slim within layouts/application
-  Rendered home/index.html.slim within layouts/application (20.7ms)
-  Rendered layouts/_navigation_links.html.slim (8.8ms)
-  Rendered layouts/_navigation.html.slim (12.1ms)
-  Rendered layouts/_messages.html.slim (2.7ms)
-  Rendered layouts/_console.html.slim (2.3ms)
-Completed 200 OK in 36694ms (Views: 36693.4ms | ActiveRecord: 0.0ms)
+  Rendered home/index.html.slim within layouts/application (22.4ms)
+  Rendered layouts/_navigation_links.html.slim (39.7ms)
+  Rendered layouts/_navigation.html.slim (50.6ms)
+  Rendered layouts/_messages.html.slim (3.5ms)
+  Rendered layouts/_console.html.slim (3.3ms)
+Completed 200 OK in 38098ms (Views: 38082.8ms | ActiveRecord: 0.0ms)
 
 
-Started PUT "/__web_console/repl_sessions/10e42a7c15b6877f85588e9f89d59727" for ::1 at 2017-03-22 21:34:11 +0200
-Started PUT "/__web_console/repl_sessions/10e42a7c15b6877f85588e9f89d59727" for ::1 at 2017-03-22 21:34:12 +0200
-Started PUT "/__web_console/repl_sessions/10e42a7c15b6877f85588e9f89d59727" for ::1 at 2017-03-22 21:34:14 +0200
-Started PUT "/__web_console/repl_sessions/10e42a7c15b6877f85588e9f89d59727" for ::1 at 2017-03-22 21:34:16 +0200
-Started PUT "/__web_console/repl_sessions/10e42a7c15b6877f85588e9f89d59727" for ::1 at 2017-03-22 21:34:18 +0200
-Started PUT "/__web_console/repl_sessions/10e42a7c15b6877f85588e9f89d59727" for ::1 at 2017-03-22 21:34:18 +0200
-Started GET "/" for ::1 at 2017-03-22 21:34:23 +0200
-Processing by HomeController#index as HTML
-  Rendering home/index.html.slim within layouts/application
-  Rendered home/index.html.slim within layouts/application (0.1ms)
-  Rendered layouts/_navigation_links.html.slim (0.3ms)
-  Rendered layouts/_navigation.html.slim (0.8ms)
-  Rendered layouts/_messages.html.slim (0.1ms)
-  Rendered layouts/_console.html.slim (14.0ms)
-Completed 200 OK in 85ms (Views: 84.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/sign_in" for ::1 at 2017-03-22 21:34:24 +0200
+Started GET "/sign_in" for ::1 at 2017-03-23 12:41:07 +0200
 Processing by Devise::SessionsController#new as HTML
   Rendering devise/sessions/new.html.slim within layouts/application
-  Rendered devise/sessions/new.html.slim within layouts/application (10.3ms)
+  Rendered devise/sessions/new.html.slim within layouts/application (28.2ms)
   Rendered layouts/_navigation_links.html.slim (0.2ms)
   Rendered layouts/_navigation.html.slim (0.8ms)
   Rendered layouts/_messages.html.slim (0.1ms)
   Rendered layouts/_console.html.slim (0.2ms)
-Completed 200 OK in 91ms (Views: 81.4ms | ActiveRecord: 0.5ms)
+Completed 200 OK in 180ms (Views: 165.9ms | ActiveRecord: 0.9ms)
 
 
-Started GET "/users/auth/developer" for ::1 at 2017-03-22 21:34:26 +0200
-Started POST "/users/auth/developer/callback" for ::1 at 2017-03-22 21:34:35 +0200
+Started GET "/users/auth/developer" for ::1 at 2017-03-23 12:41:09 +0200
+Started POST "/users/auth/developer/callback" for ::1 at 2017-03-23 12:41:18 +0200
 Processing by Users::OmniauthCallbacksController#developer as HTML
   Parameters: {"name"=>"kapranov", "email"=>"lugatex@yahoo.com"}
 Redirected to http://localhost:3000/sign_in
-Completed 302 Found in 783ms (ActiveRecord: 411.7ms)
+Completed 302 Found in 913ms (ActiveRecord: 342.5ms)
 
 
-Started GET "/sign_in" for ::1 at 2017-03-22 21:34:36 +0200
+Started GET "/sign_in" for ::1 at 2017-03-23 12:41:19 +0200
 Processing by Devise::SessionsController#new as HTML
 Redirected to http://localhost:3000/locations
 Filter chain halted as :require_no_authentication rendered or redirected
-Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
 
 
-Started GET "/locations" for ::1 at 2017-03-22 21:34:36 +0200
+Started GET "/locations" for ::1 at 2017-03-23 12:41:19 +0200
 Processing by LocationsController#index as HTML
   Rendering locations/index.html.slim within layouts/application
   Rendered collection of templates [0 times] (0.0ms)
-  Rendered locations/index.html.slim within layouts/application (4.1ms)
+  Rendered locations/index.html.slim within layouts/application (4.3ms)
   Rendered layouts/_navigation_links.html.slim (0.2ms)
   Rendered layouts/_navigation.html.slim (0.7ms)
   Rendered layouts/_messages.html.slim (0.1ms)
   Rendered layouts/_console.html.slim (0.2ms)
-Completed 200 OK in 88ms (Views: 74.7ms | ActiveRecord: 0.4ms)
+Completed 200 OK in 213ms (Views: 77.6ms | ActiveRecord: 0.7ms)
 
 
-Started GET "/locations" for ::1 at 2017-03-22 21:34:48 +0200
-Processing by LocationsController#index as HTML
-  Rendering locations/index.html.slim within layouts/application
-  Rendered collection of templates [0 times] (0.0ms)
-  Rendered locations/index.html.slim within layouts/application (0.9ms)
-  Rendered layouts/_navigation_links.html.slim (0.2ms)
-  Rendered layouts/_navigation.html.slim (0.8ms)
-  Rendered layouts/_messages.html.slim (0.1ms)
-  Rendered layouts/_console.html.slim (0.2ms)
-Completed 200 OK in 79ms (Views: 76.2ms | ActiveRecord: 0.3ms)
-
-
-Started GET "/locations" for ::1 at 2017-03-22 21:36:00 +0200
+Started GET "/locations" for ::1 at 2017-03-23 12:41:28 +0200
 Processing by LocationsController#index as HTML
   Rendering locations/index.html.slim within layouts/application
   Rendered collection of templates [0 times] (0.0ms)
   Rendered locations/index.html.slim within layouts/application (1.2ms)
   Rendered layouts/_navigation_links.html.slim (0.2ms)
-  Rendered layouts/_navigation.html.slim (0.9ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
   Rendered layouts/_messages.html.slim (0.1ms)
   Rendered layouts/_console.html.slim (0.3ms)
-Completed 200 OK in 111ms (Views: 107.0ms | ActiveRecord: 0.4ms)
+Completed 200 OK in 88ms (Views: 85.7ms | ActiveRecord: 0.4ms)
 
 
-Started GET "/locations/new" for ::1 at 2017-03-22 21:37:07 +0200
+Started GET "/locations/new" for ::1 at 2017-03-23 12:41:31 +0200
 Processing by LocationsController#new as HTML
   Rendering locations/new.html.slim within layouts/application
-  Rendered shared/_errors.html.slim (3.6ms)
-  Rendered locations/_form.html.slim (22.8ms)
-  Rendered locations/new.html.slim within layouts/application (26.1ms)
+  Rendered shared/_errors.html.slim (2.6ms)
+  Rendered locations/_form.html.slim (67.0ms)
+  Rendered locations/new.html.slim within layouts/application (69.9ms)
   Rendered layouts/_navigation_links.html.slim (0.4ms)
   Rendered layouts/_navigation.html.slim (1.0ms)
   Rendered layouts/_messages.html.slim (0.1ms)
   Rendered layouts/_console.html.slim (0.3ms)
-Completed 200 OK in 136ms (Views: 126.8ms | ActiveRecord: 0.5ms)
+Completed 200 OK in 204ms (Views: 162.8ms | ActiveRecord: 0.7ms)
 
 
-Started POST "/locations" for ::1 at 2017-03-22 21:39:39 +0200
-Processing by LocationsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qdC4xMVpQMbF0uf5ixiEpX7iowV5k3254Im0YvF3w6bEiYH7UCusWNOpPlFDyRXZEzK/gaKKB3UFlzkcnfCkvg==", "location"=>{"raw_address"=>"156 E Dana St Mountain View CA 94041 United States", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f9a57950198 @tempfile=#<Tempfile:/tmp/RackMultipart20170322-20853-1wtx2la.jpg>, @original_filename="6005262465_d49a6a4582_b.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"location[image]\"; filename=\"6005262465_d49a6a4582_b.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Add"}
-STORE[cache] ImageUploader[:image] Location 1 file (0.01s)
-PROCESS[store] ImageUploader[:image] Location[1] 1-2 files (0.05s)
-STORE[store] ImageUploader[:image] Location[1] 2 files (0.0s)
-Redirected to http://localhost:3000/locations
-Completed 302 Found in 1193ms (ActiveRecord: 318.0ms)
-
-
-Started GET "/locations" for ::1 at 2017-03-22 21:39:40 +0200
-Processing by LocationsController#index as HTML
-  Rendering locations/index.html.slim within layouts/application
-  Rendered collection of locations/_location.html.slim [1 times] (4.3ms)
-  Rendered locations/index.html.slim within layouts/application (6.3ms)
-  Rendered layouts/_navigation_links.html.slim (0.2ms)
-  Rendered layouts/_navigation.html.slim (0.9ms)
-  Rendered layouts/_messages.html.slim (0.1ms)
-  Rendered layouts/_console.html.slim (0.4ms)
-Completed 200 OK in 103ms (Views: 100.5ms | ActiveRecord: 0.4ms)
-
-
-Started GET "/locations" for ::1 at 2017-03-22 21:40:22 +0200
-Processing by LocationsController#index as HTML
-  Rendering locations/index.html.slim within layouts/application
-  Rendered collection of locations/_location.html.slim [1 times] (0.7ms)
-  Rendered locations/index.html.slim within layouts/application (2.3ms)
-  Rendered layouts/_navigation_links.html.slim (0.2ms)
-  Rendered layouts/_navigation.html.slim (0.7ms)
-  Rendered layouts/_messages.html.slim (0.1ms)
-  Rendered layouts/_console.html.slim (0.4ms)
-Completed 200 OK in 100ms (Views: 97.3ms | ActiveRecord: 0.5ms)
-
-
-Started PUT "/__web_console/repl_sessions/93a803c9f4700329060b20b6419bfc1c" for ::1 at 2017-03-22 21:40:25 +0200
-Started PUT "/__web_console/repl_sessions/93a803c9f4700329060b20b6419bfc1c" for ::1 at 2017-03-22 21:40:26 +0200
-Started PUT "/__web_console/repl_sessions/93a803c9f4700329060b20b6419bfc1c" for ::1 at 2017-03-22 21:40:27 +0200
-Started PUT "/__web_console/repl_sessions/93a803c9f4700329060b20b6419bfc1c" for ::1 at 2017-03-22 21:40:29 +0200
-Started PUT "/__web_console/repl_sessions/93a803c9f4700329060b20b6419bfc1c" for ::1 at 2017-03-22 21:40:31 +0200
-Started PUT "/__web_console/repl_sessions/93a803c9f4700329060b20b6419bfc1c" for ::1 at 2017-03-22 21:40:32 +0200
-Started PUT "/__web_console/repl_sessions/93a803c9f4700329060b20b6419bfc1c" for ::1 at 2017-03-22 21:40:34 +0200
-Started PUT "/__web_console/repl_sessions/93a803c9f4700329060b20b6419bfc1c" for ::1 at 2017-03-22 21:40:36 +0200
-Started PUT "/__web_console/repl_sessions/93a803c9f4700329060b20b6419bfc1c" for ::1 at 2017-03-22 21:40:36 +0200
-Started PUT "/__web_console/repl_sessions/93a803c9f4700329060b20b6419bfc1c" for ::1 at 2017-03-22 21:40:38 +0200
-Started PUT "/__web_console/repl_sessions/93a803c9f4700329060b20b6419bfc1c" for ::1 at 2017-03-22 21:40:40 +0200
-Started PUT "/__web_console/repl_sessions/93a803c9f4700329060b20b6419bfc1c" for ::1 at 2017-03-22 21:40:48 +0200
-Started GET "/locations" for ::1 at 2017-03-22 21:43:03 +0200
-Processing by LocationsController#index as HTML
-  Rendering locations/index.html.slim within layouts/application
-  Rendered collection of locations/_location.html.slim [1 times] (0.5ms)
-  Rendered locations/index.html.slim within layouts/application (1.9ms)
-  Rendered layouts/_navigation_links.html.slim (3.2ms)
-  Rendered layouts/_navigation.html.slim (3.7ms)
-  Rendered layouts/_messages.html.slim (0.1ms)
-  Rendered layouts/_console.html.slim (0.3ms)
-Completed 200 OK in 81ms (Views: 78.0ms | ActiveRecord: 0.4ms)
-
-
-Started GET "/locations" for ::1 at 2017-03-22 21:43:10 +0200
-Processing by LocationsController#index as HTML
-  Rendering locations/index.html.slim within layouts/application
-  Rendered collection of locations/_location.html.slim [1 times] (0.6ms)
-  Rendered locations/index.html.slim within layouts/application (2.0ms)
-  Rendered layouts/_navigation_links.html.slim (0.2ms)
-  Rendered layouts/_navigation.html.slim (0.7ms)
-  Rendered layouts/_messages.html.slim (0.1ms)
-  Rendered layouts/_console.html.slim (0.3ms)
-Completed 200 OK in 79ms (Views: 75.7ms | ActiveRecord: 0.4ms)
-
-
-Started GET "/" for ::1 at 2017-03-22 21:43:12 +0200
-Processing by HomeController#index as HTML
-  Rendering home/index.html.slim within layouts/application
-  Rendered home/index.html.slim within layouts/application (0.1ms)
-  Rendered layouts/_navigation_links.html.slim (1.5ms)
-  Rendered layouts/_navigation.html.slim (2.1ms)
-  Rendered layouts/_messages.html.slim (0.1ms)
-  Rendered layouts/_console.html.slim (0.3ms)
-Completed 200 OK in 76ms (Views: 75.4ms | ActiveRecord: 0.3ms)
-
-
-Started GET "/locations" for ::1 at 2017-03-22 21:43:14 +0200
-Processing by LocationsController#index as HTML
-  Rendering locations/index.html.slim within layouts/application
-  Rendered collection of locations/_location.html.slim [1 times] (0.5ms)
-  Rendered locations/index.html.slim within layouts/application (1.9ms)
-  Rendered layouts/_navigation_links.html.slim (0.2ms)
-  Rendered layouts/_navigation.html.slim (0.7ms)
-  Rendered layouts/_messages.html.slim (0.1ms)
-  Rendered layouts/_console.html.slim (0.3ms)
-Completed 200 OK in 89ms (Views: 86.0ms | ActiveRecord: 0.3ms)
-
-
-Started GET "/locations" for ::1 at 2017-03-22 21:43:45 +0200
-Processing by LocationsController#index as HTML
-  Rendering locations/index.html.slim within layouts/application
-  Rendered collection of locations/_location.html.slim [1 times] (0.5ms)
-  Rendered locations/index.html.slim within layouts/application (1.9ms)
-  Rendered layouts/_navigation_links.html.slim (3.3ms)
-  Rendered layouts/_navigation.html.slim (3.8ms)
-  Rendered layouts/_messages.html.slim (0.1ms)
-  Rendered layouts/_console.html.slim (0.2ms)
-Completed 200 OK in 88ms (Views: 83.5ms | ActiveRecord: 0.5ms)
-
-
-Started PUT "/__web_console/repl_sessions/4a22aa817e4854c3221b082f4712da56" for ::1 at 2017-03-22 21:43:51 +0200
-Started PUT "/__web_console/repl_sessions/4a22aa817e4854c3221b082f4712da56" for ::1 at 2017-03-22 21:43:54 +0200
-Started PUT "/__web_console/repl_sessions/4a22aa817e4854c3221b082f4712da56" for ::1 at 2017-03-22 21:43:54 +0200
-Started GET "/locations/new" for ::1 at 2017-03-22 21:45:55 +0200
+Started POST "/locations" for ::1 at 2017-03-23 12:44:25 +0200
+  
+Rack::QueryParser::ParameterTypeError (expected Array (got String) for param `image'):
+  
+rack (2.0.1) lib/rack/query_parser.rb:99:in `normalize_params'
+rack (2.0.1) lib/rack/query_parser.rb:113:in `normalize_params'
+rack (2.0.1) lib/rack/multipart/parser.rb:194:in `block (2 levels) in result'
+rack (2.0.1) lib/rack/multipart/parser.rb:105:in `get_data'
+rack (2.0.1) lib/rack/multipart/parser.rb:192:in `block in result'
+rack (2.0.1) lib/rack/multipart/parser.rb:128:in `block in each'
+rack (2.0.1) lib/rack/multipart/parser.rb:128:in `each'
+rack (2.0.1) lib/rack/multipart/parser.rb:128:in `each'
+rack (2.0.1) lib/rack/multipart/parser.rb:191:in `result'
+rack (2.0.1) lib/rack/multipart/parser.rb:76:in `parse'
+rack (2.0.1) lib/rack/multipart.rb:52:in `extract_multipart'
+rack (2.0.1) lib/rack/request.rb:472:in `parse_multipart'
+rack (2.0.1) lib/rack/request.rb:335:in `POST'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:355:in `block (2 levels) in POST'
+actionpack (5.0.2) lib/action_dispatch/http/parameters.rb:80:in `block in parse_formatted_parameters'
+actionpack (5.0.2) lib/action_dispatch/http/parameters.rb:80:in `fetch'
+actionpack (5.0.2) lib/action_dispatch/http/parameters.rb:80:in `parse_formatted_parameters'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:354:in `block in POST'
+rack (2.0.1) lib/rack/request.rb:57:in `fetch'
+rack (2.0.1) lib/rack/request.rb:57:in `fetch_header'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:353:in `POST'
+actionpack (5.0.2) lib/action_dispatch/http/parameters.rb:45:in `parameters'
+actionpack (5.0.2) lib/action_dispatch/http/filter_parameters.rb:41:in `filtered_parameters'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:21:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.2) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+omniauth (1.6.1) lib/omniauth/strategy.rb:189:in `call!'
+omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+omniauth (1.6.1) lib/omniauth/strategy.rb:189:in `call!'
+omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+omniauth (1.6.1) lib/omniauth/strategy.rb:189:in `call!'
+omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+omniauth (1.6.1) lib/omniauth/strategy.rb:189:in `call!'
+omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+omniauth (1.6.1) lib/omniauth/strategy.rb:189:in `call!'
+omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+omniauth (1.6.1) lib/omniauth/strategy.rb:189:in `call!'
+omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+rack-attack (5.0.1) lib/rack/attack.rb:140:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack (2.0.1) lib/rack/deflater.rb:35:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/kapranov/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/home/kapranov/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/home/kapranov/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started PUT "/__web_console/repl_sessions/ed3f2017aaa53fd95e3095af261905ce" for ::1 at 2017-03-23 12:45:21 +0200
+Started PUT "/__web_console/repl_sessions/ed3f2017aaa53fd95e3095af261905ce" for ::1 at 2017-03-23 12:45:21 +0200
+Started PUT "/__web_console/repl_sessions/ed3f2017aaa53fd95e3095af261905ce" for ::1 at 2017-03-23 12:45:22 +0200
+Started PUT "/__web_console/repl_sessions/ed3f2017aaa53fd95e3095af261905ce" for ::1 at 2017-03-23 12:45:23 +0200
+Started PUT "/__web_console/repl_sessions/ed3f2017aaa53fd95e3095af261905ce" for ::1 at 2017-03-23 12:45:25 +0200
+Started PUT "/__web_console/repl_sessions/ed3f2017aaa53fd95e3095af261905ce" for ::1 at 2017-03-23 12:45:26 +0200
+Started POST "/locations" for ::1 at 2017-03-23 12:45:29 +0200
+  
+Rack::QueryParser::ParameterTypeError (expected Array (got String) for param `image'):
+  
+rack (2.0.1) lib/rack/query_parser.rb:99:in `normalize_params'
+rack (2.0.1) lib/rack/query_parser.rb:113:in `normalize_params'
+rack (2.0.1) lib/rack/multipart/parser.rb:194:in `block (2 levels) in result'
+rack (2.0.1) lib/rack/multipart/parser.rb:105:in `get_data'
+rack (2.0.1) lib/rack/multipart/parser.rb:192:in `block in result'
+rack (2.0.1) lib/rack/multipart/parser.rb:128:in `block in each'
+rack (2.0.1) lib/rack/multipart/parser.rb:128:in `each'
+rack (2.0.1) lib/rack/multipart/parser.rb:128:in `each'
+rack (2.0.1) lib/rack/multipart/parser.rb:191:in `result'
+rack (2.0.1) lib/rack/multipart/parser.rb:76:in `parse'
+rack (2.0.1) lib/rack/multipart.rb:52:in `extract_multipart'
+rack (2.0.1) lib/rack/request.rb:472:in `parse_multipart'
+rack (2.0.1) lib/rack/request.rb:335:in `POST'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:355:in `block (2 levels) in POST'
+actionpack (5.0.2) lib/action_dispatch/http/parameters.rb:80:in `block in parse_formatted_parameters'
+actionpack (5.0.2) lib/action_dispatch/http/parameters.rb:80:in `fetch'
+actionpack (5.0.2) lib/action_dispatch/http/parameters.rb:80:in `parse_formatted_parameters'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:354:in `block in POST'
+rack (2.0.1) lib/rack/request.rb:57:in `fetch'
+rack (2.0.1) lib/rack/request.rb:57:in `fetch_header'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:353:in `POST'
+actionpack (5.0.2) lib/action_dispatch/http/parameters.rb:45:in `parameters'
+actionpack (5.0.2) lib/action_dispatch/http/filter_parameters.rb:41:in `filtered_parameters'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:21:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.2) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+omniauth (1.6.1) lib/omniauth/strategy.rb:189:in `call!'
+omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+omniauth (1.6.1) lib/omniauth/strategy.rb:189:in `call!'
+omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+omniauth (1.6.1) lib/omniauth/strategy.rb:189:in `call!'
+omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+omniauth (1.6.1) lib/omniauth/strategy.rb:189:in `call!'
+omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+omniauth (1.6.1) lib/omniauth/strategy.rb:189:in `call!'
+omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+omniauth (1.6.1) lib/omniauth/strategy.rb:189:in `call!'
+omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+rack-attack (5.0.1) lib/rack/attack.rb:140:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack (2.0.1) lib/rack/deflater.rb:35:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/kapranov/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/home/kapranov/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/home/kapranov/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/locations/new" for ::1 at 2017-03-23 12:46:18 +0200
 Processing by LocationsController#new as HTML
   Rendering locations/new.html.slim within layouts/application
   Rendered shared/_errors.html.slim (0.0ms)
-  Rendered locations/_form.html.slim (1.7ms)
-  Rendered locations/new.html.slim within layouts/application (2.2ms)
-  Rendered layouts/_navigation_links.html.slim (0.2ms)
-  Rendered layouts/_navigation.html.slim (0.7ms)
-  Rendered layouts/_messages.html.slim (0.1ms)
-  Rendered layouts/_console.html.slim (0.3ms)
-Completed 200 OK in 78ms (Views: 76.1ms | ActiveRecord: 0.2ms)
-
-
-Started GET "/locations/new" for ::1 at 2017-03-22 21:46:28 +0200
-Processing by LocationsController#new as HTML
-  Rendering locations/new.html.slim within layouts/application
-  Rendered shared/_errors.html.slim (0.0ms)
-  Rendered locations/_form.html.slim (5.8ms)
-  Rendered locations/new.html.slim within layouts/application (6.4ms)
-  Rendered layouts/_navigation_links.html.slim (0.2ms)
-  Rendered layouts/_navigation.html.slim (0.7ms)
-  Rendered layouts/_messages.html.slim (0.1ms)
-  Rendered layouts/_console.html.slim (0.3ms)
-Completed 200 OK in 81ms (Views: 79.7ms | ActiveRecord: 0.2ms)
-
-
-Started GET "/locations/new" for ::1 at 2017-03-22 21:46:45 +0200
-Processing by LocationsController#new as HTML
-  Rendering locations/new.html.slim within layouts/application
-  Rendered shared/_errors.html.slim (0.0ms)
-  Rendered locations/_form.html.slim (20.3ms)
-  Rendered locations/new.html.slim within layouts/application (20.8ms)
-  Rendered layouts/_navigation_links.html.slim (0.2ms)
-  Rendered layouts/_navigation.html.slim (0.7ms)
-  Rendered layouts/_messages.html.slim (0.1ms)
-  Rendered layouts/_console.html.slim (0.2ms)
-Completed 200 OK in 96ms (Views: 93.8ms | ActiveRecord: 0.2ms)
-
-
-Started POST "/locations" for ::1 at 2017-03-22 21:49:55 +0200
-Processing by LocationsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tUlcHmMM9RD79DZ95OsbBR7X0u6j+F0XyeDzJzQO9XPYEGUh9k4Zju2P79UsOop5cwfOanjhJ9ss/n5ZWImSaw==", "location"=>{"raw_address"=>"517 SW 4th Ave Ste 2 Portland OR 97204", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f9a55b91850 @tempfile=#<Tempfile:/tmp/RackMultipart20170322-20853-1c3lngh.jpg>, @original_filename="Cows.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"location[image]\"; filename=\"Cows.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Add"}
-STORE[cache] ImageUploader[:image] Location 1 file (0.01s)
-  Rendering locations/new.html.slim within layouts/application
-  Rendered shared/_errors.html.slim (0.4ms)
-  Rendered locations/_form.html.slim (30.8ms)
-  Rendered locations/new.html.slim within layouts/application (32.1ms)
-  Rendered layouts/_navigation_links.html.slim (0.2ms)
-  Rendered layouts/_navigation.html.slim (0.7ms)
-  Rendered layouts/_messages.html.slim (0.1ms)
-  Rendered layouts/_console.html.slim (0.2ms)
-Completed 200 OK in 886ms (Views: 139.1ms | ActiveRecord: 0.5ms)
-
-
-Started POST "/locations" for ::1 at 2017-03-22 21:50:11 +0200
-Processing by LocationsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6VIeNuE8pC8yR3L44WIMb1DPj2GFX/LPwfDGj7jpKrCECycJdH5IsSQ8q1Aps50TPR+T5V5GiAMk7kvx1G5NqA==", "location"=>{"raw_address"=>"517 SW 4th Ave Ste 2 Portland OR 97204", "image"=>"{\"id\":\"de49d6446afff6fb4ae06abe1901f617.jpg\",\"storage\":\"cache\",\"metadata\":{\"filename\":\"Cows.jpg\",\"size\":3795968,\"mime_type\":\"image/jpeg\",\"width\":2400,\"height\":1350}}", "remove_image"=>"1"}, "commit"=>"Add"}
-Redirected to http://localhost:3000/locations
-Completed 302 Found in 348ms (ActiveRecord: 132.2ms)
-
-
-Started GET "/locations" for ::1 at 2017-03-22 21:50:12 +0200
-Processing by LocationsController#index as HTML
-  Rendering locations/index.html.slim within layouts/application
-  Rendered collection of locations/_location.html.slim [2 times] (4.8ms)
-  Rendered locations/index.html.slim within layouts/application (6.2ms)
-  Rendered layouts/_navigation_links.html.slim (0.2ms)
-  Rendered layouts/_navigation.html.slim (0.7ms)
-  Rendered layouts/_messages.html.slim (0.1ms)
-  Rendered layouts/_console.html.slim (0.3ms)
-Completed 200 OK in 85ms (Views: 82.8ms | ActiveRecord: 0.4ms)
-
-
-Started GET "/locations" for ::1 at 2017-03-22 21:50:17 +0200
-Processing by LocationsController#index as HTML
-  Rendering locations/index.html.slim within layouts/application
-  Rendered collection of locations/_location.html.slim [2 times] (0.6ms)
-  Rendered locations/index.html.slim within layouts/application (2.5ms)
+  Rendered locations/_form.html.slim (7.0ms)
+  Rendered locations/new.html.slim within layouts/application (7.9ms)
   Rendered layouts/_navigation_links.html.slim (0.3ms)
-  Rendered layouts/_navigation.html.slim (1.0ms)
-  Rendered layouts/_messages.html.slim (0.1ms)
-  Rendered layouts/_console.html.slim (0.5ms)
-Completed 200 OK in 89ms (Views: 85.3ms | ActiveRecord: 0.4ms)
-
-
-Started GET "/locations" for ::1 at 2017-03-22 21:51:20 +0200
-Processing by LocationsController#index as HTML
-  Rendering locations/index.html.slim within layouts/application
-  Rendered collection of locations/_location.html.slim [2 times] (3.5ms)
-  Rendered locations/index.html.slim within layouts/application (8.1ms)
-  Rendered layouts/_navigation_links.html.slim (0.2ms)
-  Rendered layouts/_navigation.html.slim (0.7ms)
+  Rendered layouts/_navigation.html.slim (1.2ms)
   Rendered layouts/_messages.html.slim (0.1ms)
   Rendered layouts/_console.html.slim (0.2ms)
-Completed 200 OK in 81ms (Views: 78.0ms | ActiveRecord: 0.4ms)
+Completed 200 OK in 93ms (Views: 91.6ms | ActiveRecord: 0.2ms)
 
 
-Started GET "/locations" for ::1 at 2017-03-22 21:51:42 +0200
+Started GET "/locations/new" for ::1 at 2017-03-23 12:49:14 +0200
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.slim within layouts/application
+  Rendered shared/_errors.html.slim (0.0ms)
+  Rendered locations/_form.html.slim (5.6ms)
+  Rendered locations/new.html.slim within layouts/application (6.1ms)
+  Rendered layouts/_navigation_links.html.slim (0.4ms)
+  Rendered layouts/_navigation.html.slim (1.2ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.4ms)
+Completed 200 OK in 100ms (Views: 98.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/locations" for ::1 at 2017-03-23 12:49:43 +0200
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MS2YG1v5l12aF3DpJ09RYnEa7eoknAtXO9zQVd8Ccq4wRWNgXyhT14/OSj99kOE+/C0yB7tSFCBmrm2Dt2fOag==", "location"=>{"raw_address"=>"156 E Dana St Mountain View CA 94041", "floorplan"=>#<ActionDispatch::Http::UploadedFile:0x007ffb02943b08 @tempfile=#<Tempfile:/tmp/RackMultipart20170323-24485-1g24hhu.png>, @original_filename="PiTP-Poster-2016.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"location[floorplan]\"; filename=\"PiTP-Poster-2016.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add"}
+STORE[cache] FloorplanUploader[:floorplan] Location 1 file (0.05s)
+PROCESS[store] FloorplanUploader[:floorplan] Location[1] 1-2 files (0.46s)
+STORE[store] FloorplanUploader[:floorplan] Location[1] 2 files (0.01s)
+Redirected to http://localhost:3000/locations
+Completed 302 Found in 1703ms (ActiveRecord: 300.8ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-23 12:49:45 +0200
 Processing by LocationsController#index as HTML
   Rendering locations/index.html.slim within layouts/application
-  Rendered collection of locations/_location.html.slim [2 times] (0.8ms)
-  Rendered locations/index.html.slim within layouts/application (2.8ms)
-  Rendered layouts/_navigation_links.html.slim (0.2ms)
-  Rendered layouts/_navigation.html.slim (0.7ms)
-  Rendered layouts/_messages.html.slim (0.1ms)
-  Rendered layouts/_console.html.slim (0.2ms)
-Completed 200 OK in 110ms (Views: 107.2ms | ActiveRecord: 0.4ms)
-
-
-Started PUT "/__web_console/repl_sessions/5f501ac7ebb6f5da61d2e6690af61142" for ::1 at 2017-03-22 21:51:45 +0200
-Started PUT "/__web_console/repl_sessions/5f501ac7ebb6f5da61d2e6690af61142" for ::1 at 2017-03-22 21:51:45 +0200
-Started PUT "/__web_console/repl_sessions/5f501ac7ebb6f5da61d2e6690af61142" for ::1 at 2017-03-22 21:51:46 +0200
-Started PUT "/__web_console/repl_sessions/5f501ac7ebb6f5da61d2e6690af61142" for ::1 at 2017-03-22 21:51:49 +0200
-Started PUT "/__web_console/repl_sessions/5f501ac7ebb6f5da61d2e6690af61142" for ::1 at 2017-03-22 21:51:51 +0200
-Started PUT "/__web_console/repl_sessions/5f501ac7ebb6f5da61d2e6690af61142" for ::1 at 2017-03-22 21:51:52 +0200
-Started DELETE "/sign_out" for ::1 at 2017-03-22 21:52:09 +0200
-Processing by Devise::SessionsController#destroy as HTML
-  Parameters: {"authenticity_token"=>"we2UXQN7gexl4D96rPSZAX8Tf7bXukAvumpdB3nFKnistK1iljltcnOb5tJkJQh9EsNjMgyjOuNfdNB5FUJNYA=="}
-Redirected to http://localhost:3000/
-Completed 302 Found in 38ms (ActiveRecord: 0.3ms)
-
-
-Started GET "/" for ::1 at 2017-03-22 21:52:09 +0200
-Processing by HomeController#index as HTML
-  Rendering home/index.html.slim within layouts/application
-  Rendered home/index.html.slim within layouts/application (0.0ms)
+  Rendered collection of locations/_location.html.slim [1 times] (3.6ms)
+  Rendered locations/index.html.slim within layouts/application (21.0ms)
   Rendered layouts/_navigation_links.html.slim (0.3ms)
   Rendered layouts/_navigation.html.slim (0.8ms)
   Rendered layouts/_messages.html.slim (0.1ms)
   Rendered layouts/_console.html.slim (0.3ms)
-Completed 200 OK in 75ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 102ms (Views: 98.9ms | ActiveRecord: 0.4ms)
+
+
+Migrating to DeviseCreateUsers (20170321100951)
+Migrating to CreateLocations (20170321181600)
+Migrating to CreateFeatures (20170323100146)
+Started GET "/" for ::1 at 2017-03-23 12:51:55 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (22.3ms)
+  Rendered layouts/_navigation_links.html.slim (9.4ms)
+  Rendered layouts/_navigation.html.slim (13.2ms)
+  Rendered layouts/_messages.html.slim (2.8ms)
+  Rendered layouts/_console.html.slim (2.5ms)
+Completed 200 OK in 698ms (Views: 696.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-23 12:51:59 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (18.5ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.2ms)
+Completed 200 OK in 169ms (Views: 144.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/auth/developer" for ::1 at 2017-03-23 12:52:01 +0200
+Started POST "/users/auth/developer/callback" for ::1 at 2017-03-23 12:52:09 +0200
+Processing by Users::OmniauthCallbacksController#developer as HTML
+  Parameters: {"name"=>"kapranov", "email"=>"lugatex@yahoo.com"}
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 812ms (ActiveRecord: 438.4ms)
+
+
+Started GET "/sign_in" for ::1 at 2017-03-23 12:52:10 +0200
+Processing by Devise::SessionsController#new as HTML
+Redirected to http://localhost:3000/locations
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-23 12:52:10 +0200
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.slim within layouts/application
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered locations/index.html.slim within layouts/application (4.5ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 124ms (Views: 83.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/locations/new" for ::1 at 2017-03-23 12:52:12 +0200
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.slim within layouts/application
+  Rendered shared/_errors.html.slim (3.5ms)
+  Rendered locations/_form.html.slim (24.5ms)
+  Rendered locations/new.html.slim within layouts/application (27.6ms)
+  Rendered layouts/_navigation_links.html.slim (0.3ms)
+  Rendered layouts/_navigation.html.slim (1.0ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 129ms (Views: 116.0ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/locations" for ::1 at 2017-03-23 12:52:46 +0200
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MQe4BR/Ho09EGZvxi54Bk9sbw7lgBKE82E2jWuUjg1P8mx6jSiFW6MRqHdVgNupS848Y7Z1tLtpbfhj6XtquNQ==", "location"=>{"raw_address"=>"156 E Dana St Mountain View CA 94041", "floorplan"=>#<ActionDispatch::Http::UploadedFile:0x007f550fbb8f58 @tempfile=#<Tempfile:/tmp/RackMultipart20170323-3733-13ib0ba.jpg>, @original_filename="TRUMP-Office1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"location[floorplan]\"; filename=\"TRUMP-Office1.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Add"}
+STORE[cache] FloorplanUploader[:floorplan] Location 1 file (0.01s)
+PROCESS[store] FloorplanUploader[:floorplan] Location[1] 1-2 files (0.17s)
+STORE[store] FloorplanUploader[:floorplan] Location[1] 2 files (0.0s)
+Redirected to http://localhost:3000/locations
+Completed 302 Found in 1078ms (ActiveRecord: 346.7ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-23 12:52:47 +0200
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.slim within layouts/application
+  Rendered collection of locations/_location.html.slim [1 times] (3.2ms)
+  Rendered locations/index.html.slim within layouts/application (5.0ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.7ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 80ms (Views: 77.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-23 12:57:47 +0200
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.slim within layouts/application
+  Rendered collection of locations/_location.html.slim [1 times] (6.7ms)
+  Rendered locations/index.html.slim within layouts/application (8.6ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.7ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 92ms (Views: 88.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/locations/new" for ::1 at 2017-03-23 12:58:06 +0200
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.slim within layouts/application
+  Rendered shared/_errors.html.slim (0.1ms)
+  Rendered locations/_form.html.slim (6.3ms)
+  Rendered locations/new.html.slim within layouts/application (6.8ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.7ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 96ms (Views: 94.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/locations/new" for ::1 at 2017-03-23 12:58:29 +0200
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.slim within layouts/application
+  Rendered shared/_errors.html.slim (0.0ms)
+  Rendered locations/_form.html.slim (7.2ms)
+  Rendered locations/new.html.slim within layouts/application (7.7ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.7ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 93ms (Views: 90.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/locations" for ::1 at 2017-03-23 12:59:22 +0200
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OJzrTlrhToPjzalERXx8lfTjk46sJnNKmUCIR5LXo9z1AE3oDwe7JGO+L2Cu1JdU3HdI2lFP/KwaczPnKS6Oug==", "location"=>{"raw_address"=>"517 SW 4th Ave Ste 2 Portland, OR 97204", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f54d80ed970 @tempfile=#<Tempfile:/tmp/RackMultipart20170323-3733-42acyn.jpg>, @original_filename="TRUMP-Office4.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"location[image]\"; filename=\"TRUMP-Office4.jpg\"\r\nContent-Type: image/jpeg\r\n">, "floorplan"=>#<ActionDispatch::Http::UploadedFile:0x007f54d80ed920 @tempfile=#<Tempfile:/tmp/RackMultipart20170323-3733-ea81xm.jpg>, @original_filename="TRUMP-Office2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"location[floorplan]\"; filename=\"TRUMP-Office2.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Add"}
+STORE[cache] FloorplanUploader[:floorplan] Location 1 file (0.0s)
+STORE[cache] ImageUploader[:image] Location 1 file (0.0s)
+PROCESS[store] FloorplanUploader[:floorplan] Location[2] 1-2 files (0.03s)
+STORE[store] FloorplanUploader[:floorplan] Location[2] 2 files (0.0s)
+PROCESS[store] ImageUploader[:image] Location[2] 1-2 files (0.03s)
+STORE[store] ImageUploader[:image] Location[2] 2 files (0.0s)
+Redirected to http://localhost:3000/locations
+Completed 302 Found in 1495ms (ActiveRecord: 511.7ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-23 12:59:24 +0200
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.slim within layouts/application
+  Rendered collection of locations/_location.html.slim [2 times] (6.5ms)
+  Rendered locations/index.html.slim within layouts/application (8.0ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.7ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.2ms)
+Completed 200 OK in 88ms (Views: 85.2ms | ActiveRecord: 0.4ms)
 
 

@@ -20,6 +20,30 @@ listing. As an example, here’s what a property listing looks like on
 * A floor plan
 * A geocoded location which can be shown on a map (eg. Google Maps)
 
+```
+# For Devise vs. OmniAuth
+# table 'users'
+  email:    string
+  uid:      string
+  provider: string
+
+
+# For Geocoder, Upload Files,
+# table "locations"
+  address:        text
+  latitude:       float
+  longitude:      float
+  user_id:        integer
+  image_data:     text
+  floorplan_data: text
+  description:    text
+
+# For Dynamic nested forms
+# rails g model Feature description:text location:belongs_to
+# table 'features'
+  description:text
+```
+
 We need both the form to upload the property listing and also a view of
 the listing itself. Any other views (eg. a list of all properties that
 have been uploaded by the logged in user) would be helpful but not

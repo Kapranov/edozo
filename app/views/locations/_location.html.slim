@@ -15,3 +15,20 @@ p
     | Dimensions
     '
     = "#{location.image[:original].width}x#{location.image[:original].height}"
+
+p FloorPlan Schema
+- if location.floorplan_data?
+  = image_tag location.floorplan_url(:thumb)
+  p
+    | Size
+    '
+    = location.floorplan[:original].size
+    | bytes
+    '
+    | MIME type
+    '
+    = location.floorplan[:original].mime_type
+    '
+    | Dimensions
+    '
+    = "#{location.floorplan[:original].width}x#{location.floorplan[:original].height}"
