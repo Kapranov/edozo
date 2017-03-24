@@ -1,6 +1,5 @@
 /*
  *= require_self
- *= require foundation_and_overrides
  *= require_tree .
  */
 
@@ -16,15 +15,19 @@
 .signin-container {
   text-align: center;
 }
+
 .signin-icons {
   margin-top: 30px;
 }
+
 ul.image-list {
   list-style-type: none;
 }
+
 ul.image-list li {
   display: inline-block;
 }
+
 ul.image-list img {
   max-width: 128px;
 }

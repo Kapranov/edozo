@@ -41,7 +41,7 @@ development:
   SECRET_KEY_BASE:            'b96602fcc70060c8d429fb5b35371adaa5ad3eeddd4d4def3ed9600686425b5b65c4de282e4ae7ff8979afe1afb722d071751f6651e416fe2fbd7f7675b673e9'
   WEB_CONSOLE_IPS:            '127.0.0.1'
   MAILER_DEFAULT:             'kapranov.lugatex@gmail.com'
-
+  GEOCODER_API_KEY:           'AIzaSyA8SpOtlLavT8TmaYjKZNcar4ody1f2Y8A'
 
 test:
   <<: *general

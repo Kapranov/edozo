@@ -6,7 +6,7 @@ Geocoder.configure(
   use_https: false,
   http_proxy: nil,
   https_proxy: nil,
-  api_key:  'AIzaSyA8SpOtlLavT8TmaYjKZNcar4ody1f2Y8A',
+  api_key: Rails.application.secrets.geocoder_api_key,
   units: :km,
   distances: :linear
 )

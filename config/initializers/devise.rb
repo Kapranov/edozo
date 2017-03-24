@@ -15,11 +15,6 @@ Devise.setup do |config|
   config.reset_password_within = 6.hours
   config.sign_out_via = :delete
 
-  #config.omniauth :facebook, Rails.application.secrets.facebook_api_key, Rails.application.secrets.facebook_api_secret
-  #config.omniauth :twitter, Rails.application.secrets.twitter_api_key, Rails.application.secrets.twitter_api_secret
-  #config.omniauth :linked_in, Rails.application.secrets.linkedin_api_key, Rails.application.secrets.linkedin_api_secret
-  #config.omniauth :google_oauth2, Rails.application.secrets.google_oauth2_api_key, Rails.application.secrets.google_oauth2_api_secret
-
   User.omniauth_providers.each do |provider_name|
     if provider_name == :developer
       config.omniauth :developer

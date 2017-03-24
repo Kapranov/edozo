@@ -1,5 +1,3 @@
-@import "foundation";
-
 .top-bar .name {
   font-size: rem-calc(13);
   line-height: 45px;
@@ -11,37 +9,10 @@
   padding: 0 15px;
 }
 
-@mixin twelve-columns {
-  @include grid-column;
-}
-
-@mixin six-columns-centered {
-  @include grid-column(6);
-  @include grid-column-position(center)
-}
-
-.column {
-  @include six-columns-centered;
-}
-
-.form {
-  @include grid-column(6);
-}
-
-.form-centered {
-  @include six-columns-centered;
-}
-
-.submit {
-  @include button;
-}
-
 main {
-  @include twelve-columns;
   background-color: #eee;
 }
 
 section {
-  @include grid-row;
   margin-top: 20px;
 }
