@@ -7,37 +7,46 @@
 
 br
 
-p
-  = location.address
-- if location.image_data?
-  = image_tag location.image_url(:thumb)
-  p
-    | Size
-    '
-    = location.image[:original].size
-    | bytes
-    '
-    | MIME type
-    '
-    = location.image[:original].mime_type
-    '
-    | Dimensions
-    '
-    = "#{location.image[:original].width}x#{location.image[:original].height}"
+- if location.photos.any?
+  h4
+    | Photos
+  - location.photos.each do |photo|
+    - if photo.image_data?
+      = image_tag photo.image_url(:thumb)
+      p
+        | Size
+        '
+        = photo.image[:original].size
+        | bytes,
+        '
+        | MIME type
+        '
+        = photo.image[:original].mime_type
+        | ,
+        '
+        | Dimensions
+        '
+        = "#{photo.image[:original].width}x#{photo.image[:original].height}"
 
-p FloorPlan Schema
-- if location.floorplan_data?
-  = image_tag location.floorplan_url(:thumb)
-  p
-    | Size
-    '
-    = location.floorplan[:original].size
-    | bytes
-    '
-    | MIME type
-    '
-    = location.floorplan[:original].mime_type
-    '
-    | Dimensions
-    '
-    = "#{location.floorplan[:original].width}x#{location.floorplan[:original].height}"
+br
+
+- if location.floorplans.any?
+  h4
+    | The floorplans schema
+  - location.floorplans.each do |floorplan|
+    - if floorplan.image_data?
+      = image_tag floorplan.image_url(:thumb)
+      p
+        | Size
+        '
+        = floorplan.image[:original].size
+        | bytes,
+        '
+        | MIME type
+        '
+        = floorplan.image[:original].mime_type
+        | ,
+        '
+        | Dimensions
+        '
+        = "#{floorplan.image[:original].width}x#{floorplan.image[:original].height}"

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170323100146) do
+ActiveRecord::Schema.define(version: 20170324115601) do
 
   create_table "features", force: :cascade do |t|
     t.text     "description"
@@ -20,18 +20,32 @@ ActiveRecord::Schema.define(version: 20170323100146) do
     t.index ["location_id"], name: "index_features_on_location_id"
   end
 
+  create_table "floorplans", force: :cascade do |t|
+    t.text     "image_data"
+    t.integer  "location_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["location_id"], name: "index_floorplans_on_location_id"
+  end
+
   create_table "locations", force: :cascade do |t|
     t.text     "address"
     t.float    "latitude"
     t.float    "longitude"
     t.integer  "user_id"
-    t.text     "image_data"
-    t.text     "floorplan_data"
     t.text     "description"
-    t.decimal  "price_paid",     precision: 12, scale: 3
-    t.datetime "created_at",                              null: false
-    t.datetime "updated_at",                              null: false
+    t.decimal  "price_paid",  precision: 12, scale: 3
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
     t.index ["user_id"], name: "index_locations_on_user_id"
+  end
+
+  create_table "photos", force: :cascade do |t|
+    t.text     "image_data"
+    t.integer  "location_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["location_id"], name: "index_photos_on_location_id"
   end
 
   create_table "users", force: :cascade do |t|

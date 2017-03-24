@@ -1,5 +1,5 @@
 h4 Enter either address
-= form_for @location do |f|
+= form_for @location,  html: { class: "form-horizontal" ,  :multipart => true }   do |f|
   = render "shared/errors", object: @location
   = f.label :raw_address, 'Address'
   = f.text_field :raw_address
@@ -15,35 +15,29 @@ h4 Enter either address
       = render 'feature_fields', f: feature
     .links
       = link_to_add_association 'add feature', f, :features
-  |
-  '
-  = f.hidden_field :image, value: @location.cached_image_data
-  = f.label :image, 'please add image file'
-  = f.file_field :image, name: "location[image]"
+  br
 
-  - if @location.image_data?
-    = image_tag @location.image_url(:thumb)
-    |
-    '
-    | Remove attachment:
-    '
-    = f.check_box :remove_image
-  |
-  '
-  = f.hidden_field :floorplan, value: @location.cached_floorplan_data
-  = f.label :floorplan, 'please add FloorPlan file'
-  = f.file_field :floorplan, name: "location[floorplan]"
+  h3 Photos
+  #photos
+    = f.fields_for :photos do |photo|
+      = render 'photo_fields', f: photo
+    .links
+      = link_to_add_association 'add photo', f, :photos
+  br
 
-  - if @location.floorplan_data?
-    = image_tag @location.floorplan_url(:thumb)
-    |
-    '
-    | Remove attachment:
-    '
-    = f.check_box :remove_image
+  h3 Floorplans
+  #floorplans
+    = f.fields_for :floorplans do |floorplan|
+      = render 'floorplan_fields', f: floorplan
+    .links
+      = link_to_add_association 'add floorplan', f, :floorplans
+
+  br
 
   a[href="#" id="find-on-map"] Find on the map
+
   br
+
   = f.submit 'Add'
 
   div#map

@@ -6,6 +6,7 @@ class ImageUploader < Shrine
   plugin :cached_attachment_data
   plugin :remove_attachment
   plugin :determine_mime_type
+  plugin :pretty_location
   plugin :processing
   plugin :versions
   plugin :delete_raw

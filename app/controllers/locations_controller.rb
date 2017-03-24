@@ -33,10 +33,9 @@ class LocationsController < ApplicationController
       :user_id,
       :description,
       :price_paid,
-      :floorplan,
-      :image,
-      :remove_image,
-      features_attributes: [:id, :description, :_destroy]
+      features_attributes: [:id, :description, :_destroy],
+      photos_attributes: [:id, :image, :_destroy],
+      floorplans_attributes: [:id, :image, :_destroy]
     )
   end
 end
