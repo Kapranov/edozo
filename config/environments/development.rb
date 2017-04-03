@@ -17,3 +17,12 @@ Rails.application.configure do
     port: Rails.application.secrets.port
   }
 end
+
+class ActionDispatch::Request
+  def location
+    "159.224.174.183" # Kiev, Ukraine
+    # "71.212.123.5"  # Denver,CO or Renton,WA
+    # "208.87.35.103" # Nassau, Bahamas
+    # "50.78.167.161" # HOL Seattle, WA
+  end
+end

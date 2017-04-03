@@ -13,7 +13,8 @@ br
   - location.photos.each do |photo|
     - if photo.image_data?
       = image_tag photo.image_url(:thumb)
-      p
+      br
+      hr
         | Size
         '
         = photo.image[:original].size
@@ -27,6 +28,7 @@ br
         | Dimensions
         '
         = "#{photo.image[:original].width}x#{photo.image[:original].height}"
+      hr
 
 br
 
@@ -36,7 +38,8 @@ br
   - location.floorplans.each do |floorplan|
     - if floorplan.image_data?
       = image_tag floorplan.image_url(:thumb)
-      p
+      br
+      hr
         | Size
         '
         = floorplan.image[:original].size
@@ -50,3 +53,4 @@ br
         | Dimensions
         '
         = "#{floorplan.image[:original].width}x#{floorplan.image[:original].height}"
+      hr

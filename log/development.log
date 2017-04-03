@@ -429,3 +429,353 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-04-03 12:54:25 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (28.1ms)
+  Rendered layouts/_navigation_links.html.slim (12.4ms)
+  Rendered layouts/_navigation.html.slim (16.5ms)
+  Rendered layouts/_messages.html.slim (3.6ms)
+  Rendered layouts/_console.html.slim (5.8ms)
+Completed 200 OK in 705ms (Views: 704.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-03 12:54:30 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.slim (0.4ms)
+  Rendered layouts/_navigation.html.slim (1.1ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.4ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2017-04-03 12:54:34 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (36.4ms)
+  Rendered layouts/_navigation_links.html.slim (0.3ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (1.0ms)
+Completed 200 OK in 81ms (Views: 65.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-03 12:57:51 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (14.4ms)
+  Rendered layouts/_navigation_links.html.slim (10.5ms)
+  Rendered layouts/_navigation.html.slim (14.5ms)
+  Rendered layouts/_messages.html.slim (3.1ms)
+  Rendered layouts/_console.html.slim (2.5ms)
+Completed 200 OK in 6173ms (Views: 6172.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-03 12:58:02 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.slim (0.4ms)
+  Rendered layouts/_navigation.html.slim (0.9ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 308ms (Views: 307.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2017-04-03 12:58:05 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (11.7ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 219ms (Views: 207.7ms | ActiveRecord: 0.8ms)
+
+
+Started PUT "/__web_console/repl_sessions/5cd8f2e6bee271248738937756736788" for 127.0.0.1 at 2017-04-03 12:58:10 +0300
+Started PUT "/__web_console/repl_sessions/5cd8f2e6bee271248738937756736788" for 127.0.0.1 at 2017-04-03 12:58:11 +0300
+Started PUT "/__web_console/repl_sessions/5cd8f2e6bee271248738937756736788" for 127.0.0.1 at 2017-04-03 12:58:12 +0300
+Started PUT "/__web_console/repl_sessions/5cd8f2e6bee271248738937756736788" for 127.0.0.1 at 2017-04-03 12:58:18 +0300
+Started GET "/users/auth/developer" for 127.0.0.1 at 2017-04-03 12:58:22 +0300
+Started PUT "/__web_console/repl_sessions/5cd8f2e6bee271248738937756736788" for 127.0.0.1 at 2017-04-03 12:58:45 +0300
+Started PUT "/__web_console/repl_sessions/5cd8f2e6bee271248738937756736788" for 127.0.0.1 at 2017-04-03 12:58:47 +0300
+Started PUT "/__web_console/repl_sessions/5cd8f2e6bee271248738937756736788" for 127.0.0.1 at 2017-04-03 12:58:47 +0300
+Started GET "/sign_in" for 127.0.0.1 at 2017-04-03 13:00:47 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.slim within layouts/application
+  Rendered devise/sessions/new.html.slim within layouts/application (376.1ms)
+  Rendered layouts/_navigation_links.html.slim (3.3ms)
+  Rendered layouts/_navigation.html.slim (6.7ms)
+  Rendered layouts/_messages.html.slim (2.8ms)
+  Rendered layouts/_console.html.slim (2.5ms)
+Completed 200 OK in 835ms (Views: 812.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/auth/developer" for 127.0.0.1 at 2017-04-03 13:00:50 +0300
+Started POST "/users/auth/developer/callback" for 127.0.0.1 at 2017-04-03 13:01:01 +0300
+Processing by Users::OmniauthCallbacksController#developer as HTML
+  Parameters: {"name"=>"kapranov", "email"=>"lugatex@yahoo.com"}
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 797ms (ActiveRecord: 224.4ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2017-04-03 13:01:02 +0300
+Processing by Devise::SessionsController#new as HTML
+Redirected to http://localhost:3000/locations
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2017-04-03 13:01:02 +0300
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.slim within layouts/application
+  Rendered collection of locations/_location.html.slim [1 times] (105.6ms)
+  Rendered locations/index.html.slim within layouts/application (118.6ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 601ms (Views: 360.3ms | ActiveRecord: 4.0ms)
+
+
+Started PUT "/__web_console/repl_sessions/1b8764449f15b006b5e23cc6b2682299" for 127.0.0.1 at 2017-04-03 13:01:20 +0300
+Started PUT "/__web_console/repl_sessions/1b8764449f15b006b5e23cc6b2682299" for 127.0.0.1 at 2017-04-03 13:01:20 +0300
+Started PUT "/__web_console/repl_sessions/1b8764449f15b006b5e23cc6b2682299" for 127.0.0.1 at 2017-04-03 13:01:21 +0300
+Started GET "/locations" for 127.0.0.1 at 2017-04-03 13:05:46 +0300
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.slim within layouts/application
+  Rendered collection of locations/_location.html.slim [1 times] (91.3ms)
+  Rendered locations/index.html.slim within layouts/application (120.1ms)
+  Rendered layouts/_navigation_links.html.slim (3.1ms)
+  Rendered layouts/_navigation.html.slim (6.4ms)
+  Rendered layouts/_messages.html.slim (2.9ms)
+  Rendered layouts/_console.html.slim (2.4ms)
+Completed 200 OK in 962ms (Views: 886.2ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2017-04-03 13:05:51 +0300
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.slim within layouts/application
+  Rendered collection of locations/_location.html.slim [1 times] (9.4ms)
+  Rendered locations/index.html.slim within layouts/application (10.9ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 272ms (Views: 268.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-03 13:05:53 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (2.3ms)
+  Rendered layouts/_navigation_links.html.slim (1.4ms)
+  Rendered layouts/_navigation.html.slim (1.9ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 241ms (Views: 240.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2017-04-03 13:05:55 +0300
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.slim within layouts/application
+  Rendered collection of locations/_location.html.slim [1 times] (9.0ms)
+  Rendered locations/index.html.slim within layouts/application (10.6ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 255ms (Views: 251.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2017-04-03 13:05:58 +0300
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.slim within layouts/application
+  Rendered shared/_errors.html.slim (2.9ms)
+  Rendered locations/_feature_fields.html.slim (423.9ms)
+  Rendered locations/_photo_fields.html.slim (9.6ms)
+  Rendered locations/_floorplan_fields.html.slim (4.8ms)
+  Rendered locations/_form.html.slim (509.0ms)
+  Rendered locations/new.html.slim within layouts/application (512.2ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.5ms)
+Completed 200 OK in 779ms (Views: 776.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2017-04-03 13:08:10 +0300
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.slim within layouts/application
+  Rendered collection of locations/_location.html.slim [1 times] (93.9ms)
+  Rendered locations/index.html.slim within layouts/application (123.1ms)
+  Rendered layouts/_navigation_links.html.slim (3.1ms)
+  Rendered layouts/_navigation.html.slim (6.5ms)
+  Rendered layouts/_messages.html.slim (2.8ms)
+  Rendered layouts/_console.html.slim (2.3ms)
+Completed 200 OK in 1015ms (Views: 943.0ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2017-04-03 13:08:39 +0300
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.slim within layouts/application
+  Rendered collection of locations/_location.html.slim [1 times] (15.0ms)
+  Rendered locations/index.html.slim within layouts/application (16.4ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 246ms (Views: 242.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2017-04-03 13:09:04 +0300
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.slim within layouts/application
+  Rendered collection of locations/_location.html.slim [1 times] (51.0ms)
+  Rendered locations/index.html.slim within layouts/application (52.7ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `photo' for #<#<Class:0x007f4d3a8af0c8>:0x007f4d40d3f470>):
+    11:   - location.photos.each do |photo|
+    12:   h4
+    13:     | Photos
+    14:     - if photo.image_data?
+    15:       = image_tag photo.image_url(:thumb)
+    16:       p
+    17:         | Size
+  
+app/views/locations/_location.html.slim:14:in `_app_views_locations__location_html_slim__3699952517763431803_69984888377120'
+app/views/locations/index.html.slim:15:in `_app_views_locations_index_html_slim___3243966016651326860_69984835753460'
+Processing by ErrorsController#show as HTML
+  Parameters: {"code"=>"500"}
+  Rendering errors/500.html.slim within layouts/application
+  Rendered errors/500.html.slim within layouts/application (3.0ms)
+  Rendered layouts/_navigation_links.html.slim (0.3ms)
+  Rendered layouts/_navigation.html.slim (0.9ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 500 Internal Server Error in 269ms (Views: 268.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2017-04-03 13:09:22 +0300
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.slim within layouts/application
+  Rendered collection of locations/_location.html.slim [1 times] (16.3ms)
+  Rendered locations/index.html.slim within layouts/application (17.7ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.4ms)
+Completed 200 OK in 249ms (Views: 245.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2017-04-03 13:09:57 +0300
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.slim within layouts/application
+  Rendered collection of locations/_location.html.slim [1 times] (17.2ms)
+  Rendered locations/index.html.slim within layouts/application (18.7ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 251ms (Views: 245.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2017-04-03 13:10:14 +0300
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.slim within layouts/application
+  Rendered collection of locations/_location.html.slim [1 times] (15.8ms)
+  Rendered locations/index.html.slim within layouts/application (17.2ms)
+  Rendered layouts/_navigation_links.html.slim (0.3ms)
+  Rendered layouts/_navigation.html.slim (0.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 274ms (Views: 270.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2017-04-03 13:10:29 +0300
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.slim within layouts/application
+  Rendered collection of locations/_location.html.slim [1 times] (16.5ms)
+  Rendered locations/index.html.slim within layouts/application (18.3ms)
+  Rendered layouts/_navigation_links.html.slim (0.3ms)
+  Rendered layouts/_navigation.html.slim (1.1ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.8ms)
+Completed 200 OK in 315ms (Views: 310.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2017-04-03 13:10:44 +0300
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.slim within layouts/application
+  Rendered collection of locations/_location.html.slim [1 times] (18.7ms)
+  Rendered locations/index.html.slim within layouts/application (20.4ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.7ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 281ms (Views: 276.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2017-04-03 13:11:03 +0300
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.slim within layouts/application
+  Rendered collection of locations/_location.html.slim [1 times] (16.4ms)
+  Rendered locations/index.html.slim within layouts/application (17.8ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.7ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.4ms)
+Completed 200 OK in 266ms (Views: 261.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2017-04-03 13:11:37 +0300
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.slim within layouts/application
+  Rendered collection of locations/_location.html.slim [1 times] (18.2ms)
+  Rendered locations/index.html.slim within layouts/application (19.7ms)
+  Rendered layouts/_navigation_links.html.slim (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.7ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 286ms (Views: 282.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-03 13:12:00 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (3.6ms)
+  Rendered layouts/_navigation_links.html.slim (1.6ms)
+  Rendered layouts/_navigation.html.slim (2.2ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+  Rendered layouts/_console.html.slim (0.3ms)
+Completed 200 OK in 281ms (Views: 279.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-03 13:23:21 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (14.7ms)
+  Rendered layouts/_navigation_links.html.slim (17.6ms)
+  Rendered layouts/_navigation.html.slim (22.1ms)
+  Rendered layouts/_messages.html.slim (2.9ms)
+  Rendered layouts/_console.html.slim (2.5ms)
+Completed 200 OK in 858ms (Views: 856.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-03 14:11:54 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (14.1ms)
+  Rendered layouts/_navigation_links.html.slim (10.0ms)
+  Rendered layouts/_navigation.html.slim (13.4ms)
+  Rendered layouts/_messages.html.slim (2.9ms)
+  Rendered layouts/_console.html.slim (2.4ms)
+Completed 200 OK in 836ms (Views: 834.8ms | ActiveRecord: 0.0ms)
+
+
