@@ -47,6 +47,6 @@ We’re not looking for a perfect or finished product, so please don’t
 spend too many hours on this - we just want to see a demonstration of
 your skills.
 
-### 24 March 2017
+### 18 April 2017
 
 [1]: http://www.rightmove.co.uk/property-for-sale/property-59186501.html
