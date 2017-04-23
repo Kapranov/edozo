@@ -1,7 +1,0 @@
-- if user_signed_in?
-  li.menu-text = link_to 'Home', root_path
-  li.menu-text = link_to 'rightmove', locations_path
-  li = link_to 'Sign out', destroy_user_session_path, method: :delete
-- else
-  li.menu-text = link_to 'Home', root_path
-  li = link_to 'Sign in', new_user_session_path
