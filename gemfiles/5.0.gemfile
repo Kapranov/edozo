@@ -1,0 +1,125 @@
+source 'https://rubygems.org'
+
+git_source(:github) do |repo_name|
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  "https://github.com/#{repo_name}.git"
+end
+
+def linux_only(require_as)
+  RUBY_PLATFORM.include?('linux') && require_as
+end
+
+gem 'rails', '5.0.2'
+gem 'rails-i18n'
+gem 'sqlite3'
+gem 'sass-rails'
+gem 'uglifier'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'jquery-fileupload-rails'
+gem 'jbuilder'
+gem 'bootstrap-sass'
+gem 'font-awesome-rails'
+gem 'slim-rails'
+gem 'simple_form'
+gem 'figaro'
+gem 'rack-cors'
+gem 'rack-attack'
+gem "rack-timeout",   require:"rack/timeout/base"
+gem 'rack-throttle'
+gem 'redis',          require: ["redis", "redis/connection/hiredis"]
+gem 'redis-rails'
+gem 'redis-namespace'
+gem 'hiredis'
+gem 'em-synchrony'
+gem 'foreman'
+gem 'shrine'
+gem 'shrine-url'
+gem 'shrine-scp'
+gem "shrine-memory"
+gem "shrine-color"
+gem 'image_processing'
+gem 'mini_magick'
+gem 'fastimage'
+gem 'roda'
+gem 'sucker_punch'
+gem 'will_paginate'
+gem 'devise'
+gem 'any_login'
+gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-linkedin-oauth2'
+gem 'omniauth-twitter'
+gem 'omniauth-github'
+gem 'geocoder'
+gem 'geo_ip'
+gem 'stripe'
+gem 'cocoon'
+gem 'sidekiq'
+gem 'record_tag_helper'
+gem 'best_in_place'
+gem 'edl'
+gem 'rufus-scheduler'
+gem 'recaptcha',      require: 'recaptcha/rails'
+gem 'bcrypt'
+gem 'ransack'
+gem 'social-share-button'
+gem 'activemerchant'
+gem 'rqrcode'
+gem 'chartkick'
+gem 'groupdate'
+gem 'dateslices'
+gem 'active_median'
+gem 'hightop'
+gem 'countries'
+gem 'redcarpet'
+gem 'friendly_id'
+gem 'tinymce-rails'
+gem 'mustache'
+gem 'stache'
+
+
+group :development, :test do
+  gem 'byebug', platform: :mri
+  gem 'awesome_print'
+  gem 'awesome_rails_console'
+  gem 'hirb'
+  gem 'hirb-unicode'
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'pry-stack_explorer'
+  gem 'seed-fu'
+  gem 'faker', '1.7.4'
+  gem 'fabrication'
+  gem 'factory_girl_rails'
+  gem 'rspec-rails'
+  gem 'capybara'
+end
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'web-console'
+  gem 'rb-readline'
+  gem 'listen'
+  gem 'mailcatcher'
+  gem 'brakeman',                 require: false
+  gem 'guard',                    require: false
+  gem 'guard-minitest',           require: false
+  gem 'rb-fsevent',               require: false
+  gem 'terminal-notifier-guard',  require: false
+  gem 'rspec-its'
+end
+
+group :test do
+  gem 'rails-controller-testing'
+  gem 'minitest-rails-capybara'
+  gem 'minitest-reporters'
+  gem 'shoulda-matchers',         require: false
+  gem 'shoulda-context',          require: false
+  gem 'cucumber-rails',           require: false
+  gem 'cucumber-api',             require: false
+  gem 'cucumber-api-steps',       require: false
+  gem 'database_cleaner'
+  gem 'selenium-webdriver'
+end

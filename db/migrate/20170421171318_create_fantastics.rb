@@ -1,0 +1,11 @@
+class CreateFantastics < ActiveRecord::Migration[5.0]
+  def change
+    create_table :fantastics do |t|
+      t.string :title
+      t.text :body
+      t.datetime :published_at
+
+      t.timestamps
+    end
+  end
+end

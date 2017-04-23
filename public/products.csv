@@ -1,0 +1,4 @@
+id,name,price,description,active,category_id
+1,Trumpet,299.99,musicalb,true,8
+2,Piano,699.99,musicalc,true,3
+3,Clarinet,59.99,musicald,true,7

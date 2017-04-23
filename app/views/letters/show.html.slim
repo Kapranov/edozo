@@ -1,0 +1,8 @@
+h1
+  | Products for Letter
+  '
+  = @letter.char
+
+p = link_to "Select a Letter", alphabets_path
+
+= render :partial => @letter.products

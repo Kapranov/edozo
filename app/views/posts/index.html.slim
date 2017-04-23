@@ -1,0 +1,23 @@
+h1
+  strong Posts
+
+.row
+  .col-sm-12
+    .well
+      .small Presenters are simple classes that sit between the model and the view and provide a nice, clean, object oriented way of handling complex display logic.
+
+    table.table.table-bordered.table-striped
+      thead
+        tr
+          th Id
+          th Title
+          th.table-warning Body
+          th.table-danger Published
+      tbody
+        - @posts.each do |p|
+          - present(p) do |post|
+            tr
+              td = post.id
+              td = post.title
+              td = post.body
+              td = post.publication_status

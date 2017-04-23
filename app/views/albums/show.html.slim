@@ -1,0 +1,43 @@
+h3
+  strong Album Information:
+
+br
+
+strong
+  | Name:
+  '
+= @album.name
+
+br
+
+strong
+  | Description:
+  '
+= @album.description
+
+div#photos
+  strong Images for Album:
+  - @album.photos.each do |photo|
+    p
+      = image_tag photo.image_url(:thumb)
+      br
+      | Image:
+      '
+      = photo.image[:original].size
+      '
+      | bytes,
+      '
+      = "#{photo.image[:original].width}x#{photo.image[:original].height}"
+      | ,
+      '
+      = photo.image[:original].mime_type
+
+= link_to 'Add PHOTO for the Album', album_photos_path(@album)
+'
+| |
+'
+= link_to 'Edit', edit_album_path(@album)
+'
+| |
+'
+= link_to 'Back', albums_path

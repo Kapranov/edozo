@@ -1,0 +1,15 @@
+h1
+  strong = @fantastic.title
+hr
+
+p = markdown(@fantastic.body)
+h4
+  | Published
+  '
+  = time_ago_in_words @fantastic.published_at
+  '
+  | ago
+
+br
+
+= link_to "Back to Index", fantastics_path

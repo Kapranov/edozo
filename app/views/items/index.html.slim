@@ -1,0 +1,44 @@
+h1 All the Nested Form by Items
+
+hr
+
+= div_for @items do |item|
+  b Name:
+  '
+  = best_in_place item, :name, :as => :input
+  br
+  b Description:
+  '
+  = best_in_place item, :description, :as => :input
+  br
+  b Reviews:
+  br
+  = div_for @item_reviews do |review|
+  - for review in item.item_reviews
+    b Title:
+    '
+    = review.title
+    br
+    b Text:
+    '
+    = review.body
+    br
+  br
+  = link_to 'Show', item
+  '
+  | |
+  '
+  = link_to 'Edit', edit_item_path(item)
+  '
+  | |
+  '
+  | Destroy is disable
+
+  hr
+
+p
+  = link_to "New Item", new_item_path
+  '
+  | |
+  '
+  = link_to "Back", root_path

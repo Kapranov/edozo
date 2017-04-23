@@ -1,0 +1,21 @@
+h1
+  strong Goods
+
+table.table.table-bordered.table-striped
+  tr
+    th Good No
+    th Subtotal
+    th Tax
+    th Shipping
+    th Total
+    th Order Status
+    td &nbsp;
+  - @goods.each do |good|
+    tr
+      td = good.id
+      td = number_to_currency good.subtotal
+      td = number_to_currency good.tax
+      td = number_to_currency good.shipping
+      td = number_to_currency good.total
+      td = good.status.humanize
+      td = link_to "Edit", edit_good_path(good), class: "btn btn-primary"

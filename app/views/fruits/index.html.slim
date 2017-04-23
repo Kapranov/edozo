@@ -1,0 +1,22 @@
+h1
+  strong Fruits
+
+.row
+  .col-sm-12
+    = search_form_for @q do |f|
+      = f.label :name_cont
+      '
+      = f.search_field :name_cont
+      '
+      = f.submit
+    br
+
+    table
+      thead
+        tr
+          th = sort_link(@q, :name)
+          th
+      tbody
+        - @fruits.each do |fruit|
+          tr
+            td = fruit.name

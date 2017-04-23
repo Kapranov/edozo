@@ -1,0 +1,29 @@
+h1 Products
+
+h4 Import a CSV File
+= form_tag import_products_path, multipart: true do
+  = file_field_tag :file
+  br
+  = submit_tag "Import CSV"
+
+br
+
+= form_tag(products_path, method: :get) do
+  = text_field_tag :term, params[:term]
+  = submit_tag 'Search', name: nil
+
+= render :partial => @products
+
+hr
+
+p
+  = link_to "New Product", new_product_path
+  '
+  | |
+  '
+  = link_to 'Home', root_url
+
+.apple_pagination
+  .page_info
+    = page_entries_info @products
+  = will_paginate @products, :container => false

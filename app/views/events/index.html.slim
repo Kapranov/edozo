@@ -1,0 +1,37 @@
+h1
+  | Polymorphic Association
+  '
+  | -
+  '
+  small
+    = link_to_unless_current "Articles", articles_path
+  '
+  small
+    = link_to_unless_current "Events", events_path
+  '
+  small
+    = link_to_unless_current "Photos", albums_path
+
+- @events.each do |event|
+  .event
+    h2 = link_to event.name, event
+    .date
+      | From
+      '
+      b = event.starts_at.strftime("%B %d, %Y")
+      '
+      | to
+      '
+      b = event.ends_at.strftime("%B %d, %Y")
+    = event.description
+
+p
+  = link_to "New Event", new_event_path
+  '
+  | |
+  '
+  = link_to "Back", root_path
+
+hr
+
+= will_paginate @events

@@ -1,0 +1,15 @@
+h3 New Review
+
+br
+
+= form_for [:item, @review], html: {class: "review-form"} do |f|
+  = f.label :title, "Title"
+  = f.text_field :title, placeholder: "Please insert name for a title"
+
+  br
+  br
+
+  = f.label :body, "Text"
+  = f.text_area :body, size: "60x12", placeholder: "Please insert some text"
+  br
+  = f.submit "Submit Review"

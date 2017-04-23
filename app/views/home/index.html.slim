@@ -1,0 +1,78 @@
+h1
+  strong
+    | Application Demos
+    '
+    small
+      | detect the device type on page load for
+      '
+      = link_to_unless_current 'multiple devices', 'http://localhost:3000/home/show'
+    '
+    = social_share_button_tag
+hr
+
+.row
+  .col-sm-12
+    = link_to_unless_current 'Dashboard', dashboards_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'Complex Forms', projects_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'Shrine Upload', albums_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'Tableless Model', products_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'Geocoding', locations_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'Dynamic Select', new_person_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'Polymorphic', articles_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'Nested', items_path, class: "btn btn-default"
+    br
+    br
+    = link_to_unless_current 'Stripe Demo', new_subscription_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'Credit Card details', new_charge_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'Ajax', foods_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'Presenter Model', posts_index_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'Recaptcha', new_member_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'Ransack', fruits_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'Google Auth', googles_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'Shopping Cart', shoppings_path, class: "btn btn-default"
+    br
+    br
+    = link_to_unless_current 'Credit Card Processing', payments_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'QR Codes', new_qr_code_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'Statistics', statistics_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'Charts', charts_path, class: "btn btn-default"
+    '
+    /= link_to 'Chart Tracks', tracks_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'Enum', goods_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'Subdomain',  Rails.application.secrets.subdomain, target: "_blank", class: "btn btn-default"
+    '
+    = link_to_unless_current 'Markdown', fantastics_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'Atom Feed', atoms_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'XML/JSON', books_path, class: 'btn btn-default'
+    br
+    br
+    = link_to_unless_current 'Sitemap', '/sitemap.xml', class: 'btn btn-default'
+    '
+    = link_to_unless_current 'Mail Review', '/rails/mailers/book_mailer', class: 'btn btn-default'
+    '
+    = link_to_unless_current 'Calendar', calendar_path, class: 'btn btn-default'
+    '
+    = link_to_unless_current 'Associations #1', islands_path, class: 'btn btn-default'
+    '
+    = link_to_unless_current 'Associations #2', businesses_path, class: 'btn btn-default'

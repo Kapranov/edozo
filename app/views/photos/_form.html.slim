@@ -1,0 +1,11 @@
+= form_for([@photo.album, @photo]) do |f|
+  .field
+    = f.label :description
+    = f.text_area :description
+
+  .field
+    = f.label :image
+    = f.file_field :image, multiple: true, name: "photo[image]"
+
+  .actions
+    = f.submit

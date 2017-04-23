@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    meta[charset="utf-8"]
+    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
+    title
+      = content_for?(:title) ? yield(:title) : "Edozo"
+    = stylesheet_link_tag    'application'
+    = javascript_include_tag "application"
+    = javascript_include_tag "http://www.google.com/jsapi", "chartkick"
+    script src="https://js.stripe.com/v3/"
+    = tag :meta, :name => "stripe-key", :content => STRIPE_PUBLIC_KEY
+    = csrf_meta_tags
+    = content_for :head, auto_discovery_link_tag(:atom, feed_url(format: "atom"))
+  body
+    - flash.each do |name, msg|
+      = content_tag :div, msg, :id => "flash_#{name}"
+    header
+      = render 'layouts/navigation'
+    main[role="main"]
+      #container
+        /= render 'layouts/messages'
+        = yield
+      = render 'layouts/footer'
+    = any_login_here if defined?(AnyLogin)
+    = render 'layouts/console'
+
+    - if request.variant.include? :tablet
+      small Welcome Tablet User
+    - elsif request.variant.include? :phone
+      small Welcome Phone User

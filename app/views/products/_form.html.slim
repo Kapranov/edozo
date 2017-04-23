@@ -1,0 +1,35 @@
+= form_for @product do |f|
+  p
+    | Auto-Complete
+    = f.label :category_id
+    br
+    /= f.text_field :category_name, data: { autocomplete_source: Category.order(:name).map(&:name)}
+    = f.text_field :category_name, data: { autocomplete_source: categories_path}
+  p
+    | Simple Tableless
+    = f.label :category_id
+    br
+    /= f.collection_select :category_id, Category.all, :id, :name
+    = f.collection_select :category_id, Category.order(:name), :id, :name, include_blank: true
+  p
+    = f.label :name
+    br
+    = f.text_field :name
+  p
+    = f.label :price
+    br
+    = f.text_field :price
+  p
+    = f.label :active
+    br
+    = f.check_box :active
+
+  p
+    = f.label :description
+    br
+    = f.text_area :description, class: "tinymce pre", rows: 10, cols: 20
+  p = f.submit "Submit"
+
+= tinymce
+
+= link_to 'Back', products_path

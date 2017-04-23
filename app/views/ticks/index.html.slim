@@ -1,0 +1,5 @@
+h1 Blogs on this Server
+
+ul
+  - @ticks.each do |tick|
+    li = link_to tick.name, root_url(subdomain: tick.subdomain)

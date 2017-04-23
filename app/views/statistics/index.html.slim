@@ -1,0 +1,20 @@
+h1
+  strong Statistics
+
+.row
+  .col-sm-12
+    /= bar_chart @sporters.group(:age).count
+    /= bar_chart @sporters.top(:age, 10)
+    = sporters_by_age
+    '
+    |
+    '
+    = sporters_by_country
+    '
+    |
+    '
+    = results_by_country
+    '
+    |
+    '
+    = competitions_by_year

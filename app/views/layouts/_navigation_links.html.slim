@@ -1,0 +1,18 @@
+- if user_signed_in?
+  .menu-text
+    = link_to_unless_current 'Home', root_path, class: "btn btn-default"
+    '
+    | |
+    '
+    = link_to_unless_current 'Dashboard', dashboards_path
+    '
+    | |
+    '
+    = link_to_unless_current 'Sign out', destroy_user_session_path, method: :delete
+- else
+  .menu-text
+    = link_to_unless_current 'Home', root_path, class: "btn btn-default"
+    '
+    = link_to_unless_current 'Subdomain', Rails.application.secrets.subdomain, target: "_blank", class: "btn btn-default"
+    '
+    = link_to_unless_current 'Sign in', new_user_session_path, class: "btn btn-default"

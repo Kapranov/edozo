@@ -1,0 +1,55 @@
+h2 Item
+
+strong
+  | Your #:
+  '
+  = @item.id
+
+br
+
+strong
+  | Name:
+  '
+  = @item.name
+
+br
+
+strong
+  | Description:
+  '
+  = @item.description
+
+hr
+
+h2 Reviews
+
+h5
+  | this is review for the item #
+  '
+  = @item.id
+
+= div_for @item.item_reviews, class: "review" do |review|
+  strong
+    | Title:
+    '
+    = best_in_place review, :title,
+      :url => item_item_review_path(@item, review),
+      :as => :input
+  br
+
+  strong
+    | Text:
+    '
+    = review.body
+
+hr
+
+= link_to "Write a Review", new_item_item_review_path(@item)
+'
+| |
+'
+= link_to "Back", items_path
+'
+| |
+'
+= link_to "Home", root_path

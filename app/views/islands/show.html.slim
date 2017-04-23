@@ -1,0 +1,25 @@
+h1
+  strong = "#{@island.first_name} #{@island.last_name}"
+
+hr
+
+h3 Interactions
+
+.well
+  = link_to "New Interaction", new_island_interaction_path(@island), class: "btn btn-primary"
+
+table.table.table-bordered.table-striped
+  thead
+    tr
+      th Description
+      th Created On
+      th &nbsp;
+  - if @island.interactions.count > 0
+    - @island.interactions.each do |interaction|
+      tr
+        td = interaction.description
+        td = time_ago_in_words interaction.created_at
+        td = link_to "Edit", edit_island_interaction_path(@island, interaction), class: "btn btn-default"
+  - else
+    tr
+      td[colspan="2"] No interactions found for this person.  Click the 'New Interaction' button to create a new interaction.

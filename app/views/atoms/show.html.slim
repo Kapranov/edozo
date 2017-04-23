@@ -1,0 +1,34 @@
+h1
+  strong
+    | Show Atom Feed
+    '
+    |#
+    = @atom.id
+
+hr
+
+.row
+  .col-sm-12
+    strong
+      | Title:
+      '
+      = @atom.title
+    br
+    strong
+      | Description:
+      '
+      = @atom.body
+    br
+    strong
+      | Created:
+      '
+      = @atom.created_at
+    br
+    strong
+      | Updated:
+      '
+      = @atom.updated_at
+
+hr
+
+= link_to 'Back', '/feed.atom', class: 'btn btn-default'

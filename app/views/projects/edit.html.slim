@@ -1,0 +1,52 @@
+h1
+  strong Edit Project: ##{@project.id}
+
+.row
+  .col-sm-6
+    = simple_form_for @project do |f|
+      = f.input :name, label: 'Name', hint: 'No special characters.'
+      hr
+
+      h4
+        strong Edit tasks for the project
+
+      hr
+
+      = f.fields_for :tasks do |task_form|
+        = task_form.input :name, label: 'Name for task', hint: 'No special characters.'
+        = task_form.input :completed, label: "Completed or isn't", as: :boolean, checked_value: true, unchecked_value: false
+        = task_form.input :_destroy, as: :boolean, label: "Remove Task"
+      br
+      = f.button :submit
+      '
+      = link_to 'Show', @project, class: "btn btn-default"
+      '
+      = link_to 'Destroy', @project, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default"
+      '
+      = link_to 'Back', projects_path, class: "btn btn-default"
+  .col-sm-6
+
+/= simple_form_for(@user, html: { class: 'form-horizontal' }) do |form|
+/= form_for @project do |f|
+  p
+    strong Name:
+    |
+    '
+    = f.text_field :name
+
+  /= f.fields_for :tasks do |task_form|
+    p
+      strong Task:
+      '
+      = task_form.text_field :name
+      '
+      | Completed:
+      '
+      = task_form.check_box :completed, as: :boolean, checked_value: true, unchecked_value: false
+      '
+      | Remove Task:
+      '
+      /= task_form.label :_destroy, "Remove Task"
+      = task_form.check_box :_destroy, as: :boolean
+
+  /p = f.submit 'Update Project'

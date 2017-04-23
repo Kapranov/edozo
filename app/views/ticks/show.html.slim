@@ -1,0 +1,8 @@
+h1 = @tick.name
+hr
+- @tacks.each do |tack|
+  h3 = tack.title
+  p = truncate tack.body, length: 160
+  = link_to "Read More", tack
+hr
+= link_to 'Back', Rails.application.secrets.subdomain, class: "btn btn-default"

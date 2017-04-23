@@ -1,0 +1,13 @@
+= form_for @location do |f|
+  p
+    = f.label :address
+    br
+    = f.text_field :address
+    small.text-muted
+    '
+    | You can also enter IP. Your IP is =>
+    '
+    = request.location
+    |
+    '
+  p = f.submit

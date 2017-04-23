@@ -1,0 +1,16 @@
+h1 Editing Album
+
+= render 'form', album: @album
+
+h4 Please add photos
+
+'
+= link_to "Add Photo", new_album_photo_path(@album)
+'
+| |
+'
+= link_to 'Show', @album
+'
+| |
+'
+= link_to 'Back', albums_path

@@ -1,0 +1,57 @@
+h1
+  strong
+    = link_to 'Projects', projects_path
+
+.row
+  .col-sm-6
+    = form_tag(projects_path, method: :get, class: 'input-group') do
+      = text_field_tag :term, params[:term], class: 'form-control', placeholder: 'Search for...'
+      span.input-group-btn
+        = submit_tag "Search", class: "btn btn-default"
+  .col-sm-6
+
+hr
+
+- for project in @projects
+  strong Name:
+  '
+  = project.name
+  br
+  - for task in project.tasks
+    strong Task:
+    '
+    = task.name
+    '
+    b = task.completed == true ? "- by completed" : ""
+    br
+  br
+  = link_to 'Show', project
+  '
+  | |
+  '
+  = link_to 'Edit', edit_project_path(project)
+  '
+  | |
+  '
+  = link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' }
+  '
+  | |
+  '
+  = pluralize(project.tasks_count, 'task')
+  hr
+
+= link_to 'New Project', new_project_path, class: "btn btn-default"
+'
+= link_to 'Projects', projects_url, class: "btn btn-default"
+'
+= link_to 'Home', root_url, class: "btn btn-default"
+
+br
+br
+
+.row
+  .col-sm-12
+    .apple_pagination
+      .page_info
+        = page_entries_info @projects
+      = will_paginate @projects, :container => false

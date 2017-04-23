@@ -1,0 +1,10 @@
+= form_for @item do |f|
+  = f.label :name, "Name"
+  = f.text_field :name, placeholder: "name of the item"
+  br
+  = f.label :description, "Description"
+  = f.text_area :description, size: "60x12", placeholder: "description of the item"
+
+  br
+  br
+  = f.submit

@@ -1,0 +1,2 @@
+class Fantastic < ApplicationRecord
+end

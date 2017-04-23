@@ -1,0 +1,32 @@
+h1
+  strong
+    | Atoms Feed
+    '
+    = link_to "Format RSS", 'feed.atom', class: 'btn btn-default'
+
+hr
+
+= @atoms.each do |ttt|
+  strong
+    |#
+    '
+    = ttt.id
+    br
+    | Title:
+    '
+    = ttt.title
+    br
+    | Body:
+    '
+    = ttt.body
+    br
+    | Created:
+    '
+    = ttt.created_at
+    br
+    | Updated:
+    '
+    = ttt.updated_at
+    hr
+
+hr

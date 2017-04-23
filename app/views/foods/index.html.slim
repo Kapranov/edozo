@@ -1,0 +1,26 @@
+h1
+  strong
+    = link_to 'Foods', foods_path
+
+.row
+  .col-sm-12
+    .well
+      = link_to "New Food", new_food_path, remote: true, class: "btn btn-default"
+      '
+      var.text-mute Please add new name of the food with it cost, is used as a mechanism for sending and retrieving data asynchronously - AJAX.
+
+    .new-product
+
+    table.table.table-bordered.table-striped
+      thead
+        tr
+          th Name
+          th Price
+          th.table-warning &nbsp;
+          th.table-danger &nbsp;
+      tbody.food-index
+        = render "index"
+
+= will_paginate @foods
+
+#food-modal.modal.fade

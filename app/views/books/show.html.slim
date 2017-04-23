@@ -1,0 +1,18 @@
+h1
+  strong
+    | Book #
+    '
+    = @book.id
+
+.row
+  .col-sm-12
+    .well
+      = @book.name
+      '
+      = @book.author
+      '
+      = @book.average_rating
+      '
+      = @book.price
+      '
+      = @book.active

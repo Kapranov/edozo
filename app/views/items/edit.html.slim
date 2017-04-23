@@ -1,0 +1,18 @@
+h1
+  | Edit Item for #
+  '
+  = @item.id
+
+#item
+  = render "item_form"
+
+hr
+
+p
+  |
+  '
+  = link_to 'Back', items_path
+  '
+  | |
+  '
+  = link_to 'Home', root_path

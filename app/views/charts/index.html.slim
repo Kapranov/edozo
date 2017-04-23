@@ -1,0 +1,42 @@
+h1
+  strong Charting
+.row
+  .col-xs-6
+    h3 Visits By Day
+    /= line_chart @visits.group_by_day(:visited_at, format: "%B %d, %Y").count, discrete: true
+    = line_chart @visits.group_by_day(:visited_at).count, discrete: true
+  .col-xs-6
+    h3 Visits By Country Per Day
+    /= line_chart   Visit.pluck("country").uniq.map { |c| { name: c, data: @visits.where(country: c).group_by_day(:visited_at, format: "%B %d, %Y").count }  }, discrete: true
+    = line_chart   Visit.pluck("country").uniq.map { |c| { name: c, data: @visits.where(country: c).group_by_day(:visited_at).count }  }, discrete: true
+
+.row
+  .col-xs-6
+    h3 Total Visits by Country
+    = pie_chart @visits.group(:country).count
+  .col-xs-6
+    h3 Visits By Day
+    = geo_chart @visits.group(:country).count
+
+.row
+  .col-xs-12
+    h3 Total Load Time By Day
+    /= area_chart @visits.group_by_day(:visited_at).maximum(:load_time)
+    = area_chart @visits.group_by_day(:visited_at)
+
+.row
+  .col-xs-6
+    h3 Total Visits Per Country
+    = column_chart @visits.group(:country).count
+  .col-xs-6
+    h3 Total Visits Per Country
+    = bar_chart @visits.group(:country).count
+
+.row
+  .col-xs-12
+    h3 Visits By Country Per Day
+    /= line_chart   Visit.pluck("country").uniq.map { |c| { name: c, data: @visits.where(country: c).group_by_day(:visited_at, format: "%B %d, %Y").count }  }, colors: ["red", "green", "yellow"], discrete: true
+    = line_chart   Visit.pluck("country").uniq.map { |c| { name: c, data: @visits.where(country: c).group_by_day(:visited_at).count }  }, colors: ["red", "green", "yellow"], discrete: true
+  .col-xs-12
+    h3 Visits By Day
+    = line_chart visits_by_day_charts_path

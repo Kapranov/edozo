@@ -1,0 +1,6 @@
+h1 = @tack.title
+p = @tack.body
+hr
+= link_to 'Home', Rails.application.secrets.subdomain, class: "btn btn-default"
+'
+= link_to 'Back', root_url(subdomain: @tick.subdomain), class: "btn btn-default"

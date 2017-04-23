@@ -1,0 +1,6 @@
+- @foods.each do |food|
+  tr
+    td = food.name
+    td = number_to_currency food.price
+    td.col-md-1 = link_to '', edit_food_path(food), remote: true, class: "btn btn-info fa fa-edit"
+    td.col-md-1 = link_to '', food_delete_path(food), remote: true, class: "btn btn-danger fa fa-trash"

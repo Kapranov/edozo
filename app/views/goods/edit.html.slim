@@ -1,0 +1,44 @@
+h1
+  strong
+    | Editing good No
+    '
+    = @good.id
+hr
+
+- if @good.errors.any?
+  .alert.alert-danger
+    h2
+      |
+      = pluralize(@good.errors.count, "error")
+      '
+      | prohibited this good from being saved:
+    ul
+    = @good.errors.full_messages.each do |message|
+      li = message
+
+.row
+  .col-xs-12
+    = form_for @good do |f|
+      .row
+        .col-xs-12.form-group
+          = f.label :subtotal, class: "control-label"
+          = f.number_field :subtotal, class: "form-control"
+      .row
+        .col-xs-12.form-group
+          = f.label :tax
+          = f.number_field :tax, class: "form-control"
+      .row
+        .col-xs-12.form-group
+          = f.label :shipping
+          = f.number_field :shipping, class: "form-control"
+      .row
+        .col-xs-12.form-group
+          = f.label :total
+          = f.number_field :total, class: "form-control"
+      .row
+        .col-xs-12.form-group
+          = f.label :status
+          = f.select :status, options_for_select(@statuses.collect { |s| [s[0].humanize, s[0]] }, selected: @good.status), {} , class: "form-control"
+      .row
+        .col-xs-12.form-group
+          = f.submit "Save", class: "btn btn-primary"

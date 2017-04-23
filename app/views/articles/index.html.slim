@@ -1,0 +1,31 @@
+h1
+  | Polymorphic Association
+  '
+  | -
+  '
+  small
+    = link_to_unless_current "Articles", articles_path
+  '
+  small
+    = link_to_unless_current "Events", events_path
+  '
+  small
+    = link_to_unless_current "Photos", albums_path
+
+#articles
+  - @articles.each do |article|
+    h2 = link_to article.name, article
+    .content
+      = simple_format(article.content)
+
+hr
+
+= link_to "New Article", new_article_path
+'
+| |
+'
+= link_to "Back", root_path
+
+hr
+
+= will_paginate @articles

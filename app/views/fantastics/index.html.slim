@@ -1,0 +1,15 @@
+h1
+  strong My Blog
+hr
+- @fantastics.each do |fantastic|
+  h1 = link_to fantastic.title, fantastic
+  p = markdown(fantastic.body)
+  h5
+    | Published
+    '
+    = time_ago_in_words fantastic.published_at
+    '
+    | ago
+
+  - if fantastic != @fantastics.last
+    hr

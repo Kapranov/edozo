@@ -1,0 +1,29 @@
+h1
+  strong = @business.name
+
+hr
+
+h3 Interactions
+
+.well
+  = link_to "New Interaction", new_business_interaction_path(@business), class: "btn btn-primary"
+
+table.table.table-bordered.table-striped
+  thead
+    tr
+      th Description
+      th Created On
+      th &nbsp;
+  - if @business.interactions.count > 0
+    - @business.interactions.each do |interaction|
+      tr
+        td = interaction.description
+        td
+          = time_ago_in_words interaction.created_at
+          '
+          | ago
+        td = link_to "Edit", edit_business_interaction_path(@business, interaction), class:"btn btn-default"
+  - else
+    tr
+      td[colspan="2"]
+        | No interactions found for this business.  Click the 'New Interaction' button to create a new interaction.
